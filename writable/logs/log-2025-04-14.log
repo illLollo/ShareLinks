@@ -1,0 +1,1255 @@
+DEBUG - 2025-04-14 06:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 06:35:56 --> TypeError: App\Models\Services\UserService::get(): Return value must be of type ?App\Models\Classes\User, stdClass returned
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 55.
+ 1 APPPATH\Controllers\Login.php(53): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 06:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 06:36:04 --> TypeError: App\Models\Services\UserService::get(): Return value must be of type ?App\Models\Classes\User, stdClass returned
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 55.
+ 1 APPPATH\Controllers\Login.php(53): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 06:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 06:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 09:21:35 --> Error: Call to undefined method App\Models\Services\DriverService::getDriverByUserId()
+[Method: GET, Route: cars]
+in APPPATH\Controllers\Cars.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 09:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 09:23:48 --> Error: Call to undefined method App\Models\Services\DriverService::getDriverByUserId()
+[Method: GET, Route: cars]
+in APPPATH\Controllers\Cars.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 09:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 09:28:55 --> ErrorException: Attempt to read property "emissionDate" on null
+[Method: GET, Route: driver]
+in APPPATH\Views\manageDriver.php on line 36.
+ 1 APPPATH\Views\manageDriver.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "emissionDate" on null', 'E:\\UniServerZ\\www\\ci4\\app\\Views\\manageDriver.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\UniServerZ\\www\\ci4\\app\\Views\\manageDriver.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('manageDriver', [], true)
+ 5 APPPATH\Controllers\Driver.php(40): view('manageDriver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Driver->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 09:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 09:34:52 --> ErrorException: Attempt to read property "emissionDate" on null
+[Method: GET, Route: driver]
+in APPPATH\Views\manageDriver.php on line 36.
+ 1 APPPATH\Views\manageDriver.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "emissionDate" on null', 'E:\\UniServerZ\\www\\ci4\\app\\Views\\manageDriver.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\UniServerZ\\www\\ci4\\app\\Views\\manageDriver.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('manageDriver', [], true)
+ 5 APPPATH\Controllers\Driver.php(26): view('manageDriver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Driver->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 09:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 09:38:14 --> ErrorException: Attempt to read property "emissionDate" on null
+[Method: GET, Route: driver]
+in APPPATH\Views\manageDriver.php on line 33.
+ 1 APPPATH\Views\manageDriver.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "emissionDate" on null', 'E:\\UniServerZ\\www\\ci4\\app\\Views\\manageDriver.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\UniServerZ\\www\\ci4\\app\\Views\\manageDriver.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('manageDriver', [], true)
+ 5 APPPATH\Controllers\Driver.php(29): view('manageDriver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Driver->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 09:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:41:26 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:44:09 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:45:45 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:45:56 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:46:18 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:46:31 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:48:26 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:50:10 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:50:26 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:51:52 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:52:06 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:53:40 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:54:37 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:55:41 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:56:35 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 09:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 09:57:45 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 09:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 10:26:54 --> ErrorException: unlink(E:\UniServerZ\www\ci4\writable\debugbar/debugbar_1744624326.609846.json): No such file or directory
+[Method: GET, Route: /]
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(E:\\UniServerZ\\www\\ci4\\writable\\debugbar/debugbar_1744624326.609846.json): No such file or directory', 'E:\\UniServerZ\\www\\ci4\\system\\Debug\\Toolbar\\Collectors\\History.php', 82)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(82): unlink('E:\\UniServerZ\\www\\ci4\\writable\\debugbar/debugbar_1744624326.609846.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(517): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1744626412.588990', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(496): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(339): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 10:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:28:29 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:29:22 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:29:48 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:31:37 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:32:35 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:34:15 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:35:17 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:36:32 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:37:08 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:37:30 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:41:02 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:45:02 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:46:26 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 10:46:38 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#5 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\UniServerZ\www\ci4\app\Models\Services\UserService.php(49): CodeIgniter\Database\BaseBuilder->get(1)
+#4 E:\UniServerZ\www\ci4\app\Controllers\Login.php(43): App\Models\Services\UserService->get(Object(App\Models\Classes\Filters\UserFilter))
+#5 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-04-14 10:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 10:47:05 --> ErrorException: Attempt to read property "emissionDate" on null
+[Method: GET, Route: driver]
+in APPPATH\Views\manageDriver.php on line 35.
+ 1 APPPATH\Views\manageDriver.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "emissionDate" on null', 'E:\\UniServerZ\\www\\ci4\\app\\Views\\manageDriver.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\UniServerZ\\www\\ci4\\app\\Views\\manageDriver.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('manageDriver', [], true)
+ 5 APPPATH\Controllers\Driver.php(29): view('manageDriver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Driver->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 10:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 10:48:08 --> ErrorException: Undefined variable $session
+[Method: GET, Route: driver]
+in APPPATH\Views\manageDriver.php on line 58.
+ 1 APPPATH\Views\manageDriver.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'E:\\UniServerZ\\www\\ci4\\app\\Views\\manageDriver.php', 58)
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\UniServerZ\\www\\ci4\\app\\Views\\manageDriver.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('manageDriver', [], true)
+ 5 APPPATH\Controllers\Driver.php(29): view('manageDriver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Driver->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 10:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 10:49:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cars.php"
+[Method: GET, Route: cars]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cars.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('cars', [], true)
+ 3 APPPATH\Controllers\Cars.php(34): view('cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 10:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 10:50:04 --> DivisionByZeroError: Division by zero
+[Method: GET, Route: cars]
+in APPPATH\Views\car.php on line 18.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('car', [], true)
+ 4 APPPATH\Controllers\Cars.php(34): view('car', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 10:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 10:52:32 --> Error: Call to undefined method App\Models\Services\DriverService::getDriverByUserId()
+[Method: GET, Route: cars/details/1006]
+in APPPATH\Controllers\Cars.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->details('1006')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 10:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-14 10:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 10:57:30 --> ErrorException: Attempt to read property "name" on null
+[Method: GET, Route: cars/search]
+in APPPATH\Views\welcomeUser.php on line 7.
+ 1 APPPATH\Views\welcomeUser.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'E:\\UniServerZ\\www\\ci4\\app\\Views\\welcomeUser.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\UniServerZ\\www\\ci4\\app\\Views\\welcomeUser.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('welcomeUser', [], true)
+ 5 APPPATH\Controllers\Cars.php(138): view('welcomeUser')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-14 10:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-14 10:57:41 --> Error: Call to undefined method App\Models\Services\DriverService::getDriverByUserId()
+[Method: GET, Route: cars/details/14]
+in APPPATH\Controllers\Cars.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->details('14')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,1323 @@
+DEBUG - 2025-03-16 00:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 00:00:47 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`sharelinks`.`t_car`, CONSTRAINT `car_driver` FOREIGN KEY (`driverId`) REFERENCES `t_driver` (`driverId`)) in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_c...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_c...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_c...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_c...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(118): App\Models\Application\Data->query('INSERT INTO t_c...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(124): App\Models\Services\CarService->create(Object(App\Models\Classes\Car))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->create()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+DEBUG - 2025-03-16 00:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 00:02:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`sharelinks`.`t_car`, CONSTRAINT `car_driver` FOREIGN KEY (`driverId`) REFERENCES `t_driver` (`driverId`)) in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_c...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_c...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_c...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_c...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(118): App\Models\Application\Data->query('INSERT INTO t_c...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(124): App\Models\Services\CarService->create(Object(App\Models\Classes\Car))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->create()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+DEBUG - 2025-03-16 00:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 00:02:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`sharelinks`.`t_car`, CONSTRAINT `car_driver` FOREIGN KEY (`driverId`) REFERENCES `t_driver` (`driverId`)) in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_c...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_c...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_c...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_c...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(118): App\Models\Application\Data->query('INSERT INTO t_c...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(124): App\Models\Services\CarService->create(Object(App\Models\Classes\Car))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->create()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 00:02:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`sharelinks`.`t_car`, CONSTRAINT `car_driver` FOREIGN KEY (`driverId`) REFERENCES `t_driver` (`driverId`))
+[Method: POST, Route: cars/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_car (name, plateNumber, active, productionDate, model, euroPerKilometer, co2PerKilometer) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Models\Services\CarService.php(118): App\Models\Application\Data->query('INSERT INTO t_car (name, plateNumber, active, productionDate, model, euroPerKilometer, co2PerKilometer) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 3 APPPATH\Controllers\Cars.php(124): App\Models\Services\CarService->create(Object(App\Models\Classes\Car))
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 00:02:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`sharelinks`.`t_car`, CONSTRAINT `car_driver` FOREIGN KEY (`driverId`) REFERENCES `t_driver` (`driverId`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_car (name, plateNumber, active, productionDate, model, euroPerKilometer, co2PerKilometer) VALUES (\'asd\', \'asd\', 1, \'2025-03-12\', \'asd\', 0.1, 0.1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_car (name, plateNumber, active, productionDate, model, euroPerKilometer, co2PerKilometer) VALUES (\'asd\', \'asd\', 1, \'2025-03-12\', \'asd\', 0.1, 0.1)')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_car (name, plateNumber, active, productionDate, model, euroPerKilometer, co2PerKilometer) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 4 APPPATH\Models\Services\CarService.php(118): App\Models\Application\Data->query('INSERT INTO t_car (name, plateNumber, active, productionDate, model, euroPerKilometer, co2PerKilometer) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 5 APPPATH\Controllers\Cars.php(124): App\Models\Services\CarService->create(Object(App\Models\Classes\Car))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 00:02:52 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`sharelinks`.`t_car`, CONSTRAINT `car_driver` FOREIGN KEY (`driverId`) REFERENCES `t_driver` (`driverId`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_car (name, plateNumber, active, productionDate, model, euroPerKilometer, co2PerKilometer) VALUES (\'asd\', \'asd\', 1, \'2025-03-12\', \'asd\', 0.1, 0.1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_car (name, plateNumber, active, productionDate, model, euroPerKilometer, co2PerKilometer) VALUES (\'asd\', \'asd\', 1, \'2025-03-12\', \'asd\', 0.1, 0.1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_car (name, plateNumber, active, productionDate, model, euroPerKilometer, co2PerKilometer) VALUES (\'asd\', \'asd\', 1, \'2025-03-12\', \'asd\', 0.1, 0.1)')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_car (name, plateNumber, active, productionDate, model, euroPerKilometer, co2PerKilometer) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 5 APPPATH\Models\Services\CarService.php(118): App\Models\Application\Data->query('INSERT INTO t_car (name, plateNumber, active, productionDate, model, euroPerKilometer, co2PerKilometer) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 6 APPPATH\Controllers\Cars.php(124): App\Models\Services\CarService->create(Object(App\Models\Classes\Car))
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->create()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 00:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 00:03:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_c...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_c...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_c...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_c...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(118): App\Models\Application\Data->query('INSERT INTO t_c...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(124): App\Models\Services\CarService->create(Object(App\Models\Classes\Car))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->create()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+DEBUG - 2025-03-16 00:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 00:05:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), NULL, 10, -10)
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 00:05:57 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[Method: GET, Route: cars/index/0]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 2 APPPATH\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 3 APPPATH\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 00:05:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 4 APPPATH\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 00:05:57 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 6 APPPATH\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 00:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 00:06:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), NULL, 10, -10)
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 00:06:25 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[Method: GET, Route: cars/index/0]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 2 APPPATH\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 3 APPPATH\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 00:06:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 4 APPPATH\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 00:06:25 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 6 APPPATH\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 00:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 00:06:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), NULL, 10, -10)
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 00:06:48 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[Method: GET, Route: cars/index/0]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 2 APPPATH\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 3 APPPATH\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 00:06:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 4 APPPATH\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 00:06:48 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 442 LIMIT 10 OFFSET -10')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Models\Services\CarService.php(67): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 6 APPPATH\Controllers\Cars.php(41): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 00:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 00:08:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? WHERE 1=1  AND accessId = ? AND active = ?' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE t_access...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE t_access...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE t_access...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('UPDATE t_access...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(86): App\Models\Application\Data->query('UPDATE t_access...', Array)
+#5 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(95): App\Models\Services\AccessesService->update(Object(App\Models\Classes\Filters\AccessesFilter), Object(App\Models\Classes\Filters\AccessesFilter))
+#6 F:\UniServerZ\www\ci4\app\Models\ApplicationUtilities.php(88): App\Models\Services\AccessesService->delete(Object(App\Models\Classes\Filters\AccessesFilter))
+#7 F:\UniServerZ\www\ci4\app\Controllers\Homepage.php(237): App\Models\ApplicationUtilities::logout()
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Homepage->logout()
+#9 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#10 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+DEBUG - 2025-03-16 00:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 00:09:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? WHERE 1=1  AND accessId = ? AND active = ?' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE t_access...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE t_access...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE t_access...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('UPDATE t_access...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(86): App\Models\Application\Data->query('UPDATE t_access...', Array)
+#5 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(95): App\Models\Services\AccessesService->update(Object(App\Models\Classes\Filters\AccessesFilter), Object(App\Models\Classes\Filters\AccessesFilter))
+#6 F:\UniServerZ\www\ci4\app\Models\ApplicationUtilities.php(88): App\Models\Services\AccessesService->delete(Object(App\Models\Classes\Filters\AccessesFilter))
+#7 F:\UniServerZ\www\ci4\app\Controllers\Homepage.php(237): App\Models\ApplicationUtilities::logout()
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Homepage->logout()
+#9 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#10 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+DEBUG - 2025-03-16 00:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 00:41:50 --> Error: Call to undefined function App\Controllers\profile()
+[Method: GET, Route: homepage]
+in APPPATH\Controllers\Homepage.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Homepage->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 00:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 00:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 00:43:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? WHERE 1=1  AND accessId = ? AND active = ?' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE t_access...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE t_access...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE t_access...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('UPDATE t_access...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(86): App\Models\Application\Data->query('UPDATE t_access...', Array)
+#5 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(95): App\Models\Services\AccessesService->update(Object(App\Models\Classes\Filters\AccessesFilter), Object(App\Models\Classes\Filters\AccessesFilter))
+#6 F:\UniServerZ\www\ci4\app\Models\ApplicationUtilities.php(88): App\Models\Services\AccessesService->delete(Object(App\Models\Classes\Filters\AccessesFilter))
+#7 F:\UniServerZ\www\ci4\app\Controllers\Homepage.php(238): App\Models\ApplicationUtilities::logout()
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Homepage->logout()
+#9 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#10 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+DEBUG - 2025-03-16 01:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 01:12:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? WHERE 1=1  AND accessId = ? AND active = ?' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE t_access...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE t_access...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE t_access...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('UPDATE t_access...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(86): App\Models\Application\Data->query('UPDATE t_access...', Array)
+#5 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(95): App\Models\Services\AccessesService->update(Object(App\Models\Classes\Filters\AccessesFilter), Object(App\Models\Classes\Filters\AccessesFilter))
+#6 F:\UniServerZ\www\ci4\app\Models\ApplicationUtilities.php(88): App\Models\Services\AccessesService->delete(Object(App\Models\Classes\Filters\AccessesFilter))
+#7 F:\UniServerZ\www\ci4\app\Controllers\Homepage.php(238): App\Models\ApplicationUtilities::logout()
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Homepage->logout()
+#9 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#10 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+DEBUG - 2025-03-16 01:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 01:18:49 --> ArgumentCountError: Too few arguments to function App\Controllers\Cars::search(), 0 passed in F:\UniServerZ\www\ci4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: cars/search]
+in APPPATH\Controllers\Cars.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 01:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 01:20:14 --> ArgumentCountError: Too few arguments to function App\Controllers\Cars::search(), 0 passed in F:\UniServerZ\www\ci4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: cars/search]
+in APPPATH\Controllers\Cars.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 01:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 01:26:58 --> ErrorException: Undefined variable $page
+[Method: GET, Route: cars/search]
+in APPPATH\Controllers\Cars.php on line 123.
+ 1 APPPATH\Controllers\Cars.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'F:\\UniServerZ\\www\\ci4\\app\\Controllers\\Cars.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 01:27:09 --> ArgumentCountError: Too few arguments to function App\Controllers\Cars::search(), 0 passed in F:\UniServerZ\www\ci4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: cars/search]
+in APPPATH\Controllers\Cars.php on line 93.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 01:27:26 --> ArgumentCountError: Too few arguments to function App\Controllers\Cars::search(), 0 passed in F:\UniServerZ\www\ci4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: cars/search]
+in APPPATH\Controllers\Cars.php on line 93.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 01:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 01:32:46 --> TypeError: App\Models\Classes\Filters\CarFilter::__construct(): Argument #1 ($carId) must be of type ?int, string given, called in F:\UniServerZ\www\ci4\app\Controllers\Cars.php on line 110
+[Method: GET, Route: cars/search]
+in APPPATH\Models\Classes\Filters\CarFilter.php on line 19.
+ 1 APPPATH\Controllers\Cars.php(110): App\Models\Classes\Filters\CarFilter->__construct('macchina', 'macchina', 'macchina', true, 'macchina', 'macchina', 'macchina', 'macchina', 'macchina', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 01:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 01:34:00 --> DateMalformedStringException: Failed to parse time string (macchina) at position 0 (m): The timezone could not be found in the database
+[Method: GET, Route: cars/search]
+in APPPATH\Controllers\Cars.php on line 115.
+ 1 APPPATH\Controllers\Cars.php(115): DateTime->__construct('macchina')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 01:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 01:37:00 --> Error: Call to a member function format() on false
+[Method: GET, Route: cars/search]
+in APPPATH\Controllers\Cars.php on line 118.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 01:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 01:37:30 --> TypeError: App\Models\Classes\Filters\CarFilter::__construct(): Argument #7 ($euroPerKilometer) must be of type ?float, string given, called in F:\UniServerZ\www\ci4\app\Controllers\Cars.php on line 113
+[Method: GET, Route: cars/search]
+in APPPATH\Models\Classes\Filters\CarFilter.php on line 19.
+ 1 APPPATH\Controllers\Cars.php(113): App\Models\Classes\Filters\CarFilter->__construct(null, 'macchina', 'macchina', true, null, 'macchina', 'macchina', 'macchina', null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 01:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 01:41:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name LIKE OR'123' plateNumber LIKE OR'123' active LIKE OR1 model LIKE OR'123'' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*)...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*)...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), NULL, NULL, 'LIKE', 'OR')
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->search()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 01:41:12 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name LIKE OR'123' plateNumber LIKE OR'123' active LIKE OR1 model LIKE OR'123'' at line 1
+[Method: GET, Route: cars/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 name LIKE OR? plateNumber LIKE OR? active LIKE OR? model LIKE OR?', [...])
+ 2 APPPATH\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 name LIKE OR? plateNumber LIKE OR? active LIKE OR? model LIKE OR?', [...])
+ 3 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 01:41:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name LIKE OR'123' plateNumber LIKE OR'123' active LIKE OR1 model LIKE OR'123'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 name LIKE OR\'123\' plateNumber LIKE OR\'123\' active LIKE OR1 model LIKE OR\'123\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 name LIKE OR\'123\' plateNumber LIKE OR\'123\' active LIKE OR1 model LIKE OR\'123\'')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 name LIKE OR? plateNumber LIKE OR? active LIKE OR? model LIKE OR?', [...])
+ 4 APPPATH\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 name LIKE OR? plateNumber LIKE OR? active LIKE OR? model LIKE OR?', [...])
+ 5 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 01:41:12 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name LIKE OR'123' plateNumber LIKE OR'123' active LIKE OR1 model LIKE OR'123'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 name LIKE OR\'123\' plateNumber LIKE OR\'123\' active LIKE OR1 model LIKE OR\'123\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 name LIKE OR\'123\' plateNumber LIKE OR\'123\' active LIKE OR1 model LIKE OR\'123\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 name LIKE OR\'123\' plateNumber LIKE OR\'123\' active LIKE OR1 model LIKE OR\'123\'')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 name LIKE OR? plateNumber LIKE OR? active LIKE OR? model LIKE OR?', [...])
+ 5 APPPATH\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 name LIKE OR? plateNumber LIKE OR? active LIKE OR? model LIKE OR?', [...])
+ 6 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 01:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 01:41:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR1 LIKE model OR'123'' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*)...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*)...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), NULL, NULL, 'LIKE', 'OR')
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->search()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 01:41:31 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR1 LIKE model OR'123'' at line 1
+[Method: GET, Route: cars/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR? LIKE plateNumber OR? LIKE active OR? LIKE model OR?', [...])
+ 2 APPPATH\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR? LIKE plateNumber OR? LIKE active OR? LIKE model OR?', [...])
+ 3 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 01:41:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR1 LIKE model OR'123'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR\'123\' LIKE plateNumber OR\'123\' LIKE active OR1 LIKE model OR\'123\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR\'123\' LIKE plateNumber OR\'123\' LIKE active OR1 LIKE model OR\'123\'')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR? LIKE plateNumber OR? LIKE active OR? LIKE model OR?', [...])
+ 4 APPPATH\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR? LIKE plateNumber OR? LIKE active OR? LIKE model OR?', [...])
+ 5 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 01:41:31 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR1 LIKE model OR'123'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR\'123\' LIKE plateNumber OR\'123\' LIKE active OR1 LIKE model OR\'123\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR\'123\' LIKE plateNumber OR\'123\' LIKE active OR1 LIKE model OR\'123\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR\'123\' LIKE plateNumber OR\'123\' LIKE active OR1 LIKE model OR\'123\'')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR? LIKE plateNumber OR? LIKE active OR? LIKE model OR?', [...])
+ 5 APPPATH\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR? LIKE plateNumber OR? LIKE active OR? LIKE model OR?', [...])
+ 6 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 01:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 01:41:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE plateNumber OR  LIKE active OR  LIKE model OR' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*)...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*)...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), NULL, NULL, 'LIKE', 'OR')
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->search()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 01:41:48 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE plateNumber OR  LIKE active OR  LIKE model OR' at line 1
+[Method: GET, Route: cars/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR  LIKE plateNumber OR  LIKE active OR  LIKE model OR ', [...])
+ 2 APPPATH\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR  LIKE plateNumber OR  LIKE active OR  LIKE model OR ', [...])
+ 3 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 01:41:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE plateNumber OR  LIKE active OR  LIKE model OR' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR  LIKE plateNumber OR  LIKE active OR  LIKE model OR ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR  LIKE plateNumber OR  LIKE active OR  LIKE model OR ')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR  LIKE plateNumber OR  LIKE active OR  LIKE model OR ', [...])
+ 4 APPPATH\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR  LIKE plateNumber OR  LIKE active OR  LIKE model OR ', [...])
+ 5 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 01:41:48 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE plateNumber OR  LIKE active OR  LIKE model OR' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR  LIKE plateNumber OR  LIKE active OR  LIKE model OR ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR  LIKE plateNumber OR  LIKE active OR  LIKE model OR ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR  LIKE plateNumber OR  LIKE active OR  LIKE model OR ')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR  LIKE plateNumber OR  LIKE active OR  LIKE model OR ', [...])
+ 5 APPPATH\Models\Services\CarService.php(39): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 LIKE name OR  LIKE plateNumber OR  LIKE active OR  LIKE model OR ', [...])
+ 6 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 01:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 01:44:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE  plateNumber LIKE '123' LIKE  active LIKE 1 LIKE  model LIKE '123'' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*)...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(42): App\Models\Application\Data->query('SELECT count(*)...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), NULL, NULL, 'LIKE', 'OR')
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->search()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 01:44:12 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE  plateNumber LIKE '123' LIKE  active LIKE 1 LIKE  model LIKE '123'' at line 1
+[Method: GET, Route: cars/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE ? LIKE  plateNumber LIKE ? LIKE  active LIKE ? LIKE  model LIKE ?', [...])
+ 2 APPPATH\Models\Services\CarService.php(42): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE ? LIKE  plateNumber LIKE ? LIKE  active LIKE ? LIKE  model LIKE ?', [...])
+ 3 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 01:44:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE  plateNumber LIKE '123' LIKE  active LIKE 1 LIKE  model LIKE '123'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE \'123\' LIKE  plateNumber LIKE \'123\' LIKE  active LIKE 1 LIKE  model LIKE \'123\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE \'123\' LIKE  plateNumber LIKE \'123\' LIKE  active LIKE 1 LIKE  model LIKE \'123\'')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE ? LIKE  plateNumber LIKE ? LIKE  active LIKE ? LIKE  model LIKE ?', [...])
+ 4 APPPATH\Models\Services\CarService.php(42): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE ? LIKE  plateNumber LIKE ? LIKE  active LIKE ? LIKE  model LIKE ?', [...])
+ 5 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 01:44:12 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE  plateNumber LIKE '123' LIKE  active LIKE 1 LIKE  model LIKE '123'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE \'123\' LIKE  plateNumber LIKE \'123\' LIKE  active LIKE 1 LIKE  model LIKE \'123\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE \'123\' LIKE  plateNumber LIKE \'123\' LIKE  active LIKE 1 LIKE  model LIKE \'123\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE \'123\' LIKE  plateNumber LIKE \'123\' LIKE  active LIKE 1 LIKE  model LIKE \'123\'')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE ? LIKE  plateNumber LIKE ? LIKE  active LIKE ? LIKE  model LIKE ?', [...])
+ 5 APPPATH\Models\Services\CarService.php(42): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE ? LIKE  plateNumber LIKE ? LIKE  active LIKE ? LIKE  model LIKE ?', [...])
+ 6 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->count(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 01:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 01:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 10:24:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? WHERE 1=1  AND accessId = ? AND active = ?' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE t_access...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE t_access...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE t_access...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('UPDATE t_access...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(86): App\Models\Application\Data->query('UPDATE t_access...', Array)
+#5 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(95): App\Models\Services\AccessesService->update(Object(App\Models\Classes\Filters\AccessesFilter), Object(App\Models\Classes\Filters\AccessesFilter))
+#6 F:\UniServerZ\www\ci4\app\Models\ApplicationUtilities.php(88): App\Models\Services\AccessesService->delete(Object(App\Models\Classes\Filters\AccessesFilter))
+#7 F:\UniServerZ\www\ci4\app\Controllers\Homepage.php(238): App\Models\ApplicationUtilities::logout()
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Homepage->logout()
+#9 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#10 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+DEBUG - 2025-03-16 10:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 10:26:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'acchina'% OR  plateNumber LIKE %'acchina'% OR  active LIKE %1% OR  model LIKE ' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*)...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(65): App\Models\Application\Data->query('SELECT count(*)...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(113): App\Models\Services\CarService->countLike(Object(App\Models\Classes\Filters\CarFilter), NULL, NULL, 'LIKE', 'OR')
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->search()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 10:26:34 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'acchina'% OR  plateNumber LIKE %'acchina'% OR  active LIKE %1% OR  model LIKE ' at line 1
+[Method: GET, Route: cars/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 2 APPPATH\Models\Services\CarService.php(65): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 3 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->countLike(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 10:26:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'acchina'% OR  plateNumber LIKE %'acchina'% OR  active LIKE %1% OR  model LIKE ' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %\'acchina\'% OR  plateNumber LIKE %\'acchina\'% OR  active LIKE %1% OR  model LIKE %\'acchina\'%')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %\'acchina\'% OR  plateNumber LIKE %\'acchina\'% OR  active LIKE %1% OR  model LIKE %\'acchina\'%')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 4 APPPATH\Models\Services\CarService.php(65): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 5 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->countLike(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 10:26:34 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'acchina'% OR  plateNumber LIKE %'acchina'% OR  active LIKE %1% OR  model LIKE ' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %\'acchina\'% OR  plateNumber LIKE %\'acchina\'% OR  active LIKE %1% OR  model LIKE %\'acchina\'%', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %\'acchina\'% OR  plateNumber LIKE %\'acchina\'% OR  active LIKE %1% OR  model LIKE %\'acchina\'%')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %\'acchina\'% OR  plateNumber LIKE %\'acchina\'% OR  active LIKE %1% OR  model LIKE %\'acchina\'%')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 5 APPPATH\Models\Services\CarService.php(65): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 6 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->countLike(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 13:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 13:18:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'acchina'% OR  plateNumber LIKE %'acchina'% OR  active LIKE %1% OR  model LIKE ' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*)...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(65): App\Models\Application\Data->query('SELECT count(*)...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(113): App\Models\Services\CarService->countLike(Object(App\Models\Classes\Filters\CarFilter), NULL, NULL, 'LIKE', 'OR')
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->search()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 13:18:09 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'acchina'% OR  plateNumber LIKE %'acchina'% OR  active LIKE %1% OR  model LIKE ' at line 1
+[Method: GET, Route: cars/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 2 APPPATH\Models\Services\CarService.php(65): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 3 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->countLike(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 13:18:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'acchina'% OR  plateNumber LIKE %'acchina'% OR  active LIKE %1% OR  model LIKE ' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %\'acchina\'% OR  plateNumber LIKE %\'acchina\'% OR  active LIKE %1% OR  model LIKE %\'acchina\'%')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %\'acchina\'% OR  plateNumber LIKE %\'acchina\'% OR  active LIKE %1% OR  model LIKE %\'acchina\'%')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 4 APPPATH\Models\Services\CarService.php(65): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 5 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->countLike(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 13:18:09 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'acchina'% OR  plateNumber LIKE %'acchina'% OR  active LIKE %1% OR  model LIKE ' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %\'acchina\'% OR  plateNumber LIKE %\'acchina\'% OR  active LIKE %1% OR  model LIKE %\'acchina\'%', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %\'acchina\'% OR  plateNumber LIKE %\'acchina\'% OR  active LIKE %1% OR  model LIKE %\'acchina\'%')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %\'acchina\'% OR  plateNumber LIKE %\'acchina\'% OR  active LIKE %1% OR  model LIKE %\'acchina\'%')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 5 APPPATH\Models\Services\CarService.php(65): App\Models\Application\Data->query('SELECT count(*) as count FROM t_car WHERE 1 = 1 AND  name LIKE %?% OR  plateNumber LIKE %?% OR  active LIKE %?% OR  model LIKE %?%', [...])
+ 6 APPPATH\Controllers\Cars.php(113): App\Models\Services\CarService->countLike(Object(App\Models\Classes\Filters\CarFilter), null, null, 'LIKE', 'OR')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 13:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 13:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 14:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 14:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 14:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 14:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 14:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 14:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 14:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 14:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 14:16:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as count FROM t_car WHERE active = true AND (name LIKE '%acchina%' OR plateNumbe' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * as cou...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * as cou...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * as cou...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * as cou...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(75): App\Models\Application\Data->query('SELECT * as cou...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(136): App\Models\Services\CarService->readLike(Object(App\Models\Classes\Filters\CarFilter), NULL, 10, 0)
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->search()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 14:16:01 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as count FROM t_car WHERE active = true AND (name LIKE '%acchina%' OR plateNumbe' at line 1
+[Method: GET, Route: cars/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 2 APPPATH\Models\Services\CarService.php(75): App\Models\Application\Data->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 3 APPPATH\Controllers\Cars.php(136): App\Models\Services\CarService->readLike(Object(App\Models\Classes\Filters\CarFilter), null, 10, 0)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 14:16:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as count FROM t_car WHERE active = true AND (name LIKE '%acchina%' OR plateNumbe' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * as count FROM t_car WHERE active = true AND (name LIKE \'%acchina%\' OR plateNumber LIKE \'%acchina%\' OR model LIKE \'%acchina%\' OR driverId LIKE \'%1%\') LIMIT 10 OFFSET 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * as count FROM t_car WHERE active = true AND (name LIKE \'%acchina%\' OR plateNumber LIKE \'%acchina%\' OR model LIKE \'%acchina%\' OR driverId LIKE \'%1%\') LIMIT 10 OFFSET 0')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 4 APPPATH\Models\Services\CarService.php(75): App\Models\Application\Data->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 5 APPPATH\Controllers\Cars.php(136): App\Models\Services\CarService->readLike(Object(App\Models\Classes\Filters\CarFilter), null, 10, 0)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 14:16:01 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as count FROM t_car WHERE active = true AND (name LIKE '%acchina%' OR plateNumbe' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE \'%acchina%\' OR plateNumber LIKE \'%acchina%\' OR model LIKE \'%acchina%\' OR driverId LIKE \'%1%\') LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * as count FROM t_car WHERE active = true AND (name LIKE \'%acchina%\' OR plateNumber LIKE \'%acchina%\' OR model LIKE \'%acchina%\' OR driverId LIKE \'%1%\') LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * as count FROM t_car WHERE active = true AND (name LIKE \'%acchina%\' OR plateNumber LIKE \'%acchina%\' OR model LIKE \'%acchina%\' OR driverId LIKE \'%1%\') LIMIT 10 OFFSET 0')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 5 APPPATH\Models\Services\CarService.php(75): App\Models\Application\Data->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 6 APPPATH\Controllers\Cars.php(136): App\Models\Services\CarService->readLike(Object(App\Models\Classes\Filters\CarFilter), null, 10, 0)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 19:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 19:41:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as count FROM t_car WHERE active = true AND (name LIKE '%macchina%' OR plateNumb' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * as cou...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * as cou...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * as cou...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * as cou...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(75): App\Models\Application\Data->query('SELECT * as cou...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(136): App\Models\Services\CarService->readLike(Object(App\Models\Classes\Filters\CarFilter), NULL, 10, 0)
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->search()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 19:41:25 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as count FROM t_car WHERE active = true AND (name LIKE '%macchina%' OR plateNumb' at line 1
+[Method: GET, Route: cars/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 2 APPPATH\Models\Services\CarService.php(75): App\Models\Application\Data->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 3 APPPATH\Controllers\Cars.php(136): App\Models\Services\CarService->readLike(Object(App\Models\Classes\Filters\CarFilter), null, 10, 0)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 19:41:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as count FROM t_car WHERE active = true AND (name LIKE '%macchina%' OR plateNumb' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * as count FROM t_car WHERE active = true AND (name LIKE \'%macchina%\' OR plateNumber LIKE \'%macchina%\' OR model LIKE \'%macchina%\' OR driverId LIKE \'%1%\') LIMIT 10 OFFSET 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * as count FROM t_car WHERE active = true AND (name LIKE \'%macchina%\' OR plateNumber LIKE \'%macchina%\' OR model LIKE \'%macchina%\' OR driverId LIKE \'%1%\') LIMIT 10 OFFSET 0')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 4 APPPATH\Models\Services\CarService.php(75): App\Models\Application\Data->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 5 APPPATH\Controllers\Cars.php(136): App\Models\Services\CarService->readLike(Object(App\Models\Classes\Filters\CarFilter), null, 10, 0)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 19:41:25 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as count FROM t_car WHERE active = true AND (name LIKE '%macchina%' OR plateNumb' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE \'%macchina%\' OR plateNumber LIKE \'%macchina%\' OR model LIKE \'%macchina%\' OR driverId LIKE \'%1%\') LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * as count FROM t_car WHERE active = true AND (name LIKE \'%macchina%\' OR plateNumber LIKE \'%macchina%\' OR model LIKE \'%macchina%\' OR driverId LIKE \'%1%\') LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * as count FROM t_car WHERE active = true AND (name LIKE \'%macchina%\' OR plateNumber LIKE \'%macchina%\' OR model LIKE \'%macchina%\' OR driverId LIKE \'%1%\') LIMIT 10 OFFSET 0')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 5 APPPATH\Models\Services\CarService.php(75): App\Models\Application\Data->query('SELECT * as count FROM t_car WHERE active = true AND (name LIKE ? OR plateNumber LIKE ? OR model LIKE ? OR driverId LIKE ?) LIMIT ? OFFSET ?', [...])
+ 6 APPPATH\Controllers\Cars.php(136): App\Models\Services\CarService->readLike(Object(App\Models\Classes\Filters\CarFilter), null, 10, 0)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 19:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 19:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 20:01:01 --> ErrorException: Undefined property: CodeIgniter\View\View::$request
+[Method: GET, Route: cars/search]
+in APPPATH\Views\resultSearchCar.php on line 20.
+ 1 APPPATH\Views\resultSearchCar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'F:\\UniServerZ\\www\\ci4\\app\\Views\\resultSearchCar.php', 20)
+ 2 SYSTEMPATH\View\View.php(224): include('F:\\UniServerZ\\www\\ci4\\app\\Views\\resultSearchCar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('resultSearchCar', [], true)
+ 5 APPPATH\Models\ApplicationUtilities.php(65): view('resultSearchCar')
+ 6 APPPATH\Controllers\Cars.php(166): App\Models\ApplicationUtilities::authenticate(Object(stdClass), 'resultSearchCar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 20:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 20:02:11 --> ErrorException: Undefined variable $currentPage
+[Method: GET, Route: cars/search]
+in APPPATH\Views\resultSearchCar.php on line 72.
+ 1 APPPATH\Views\resultSearchCar.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'F:\\UniServerZ\\www\\ci4\\app\\Views\\resultSearchCar.php', 72)
+ 2 SYSTEMPATH\View\View.php(224): include('F:\\UniServerZ\\www\\ci4\\app\\Views\\resultSearchCar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('resultSearchCar', [], true)
+ 5 APPPATH\Models\ApplicationUtilities.php(65): view('resultSearchCar')
+ 6 APPPATH\Controllers\Cars.php(168): App\Models\ApplicationUtilities::authenticate(Object(stdClass), 'resultSearchCar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 20:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 20:04:32 --> ErrorException: Undefined variable $nCars
+[Method: GET, Route: cars/search]
+in APPPATH\Controllers\Cars.php on line 157.
+ 1 APPPATH\Controllers\Cars.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nCars', 'F:\\UniServerZ\\www\\ci4\\app\\Controllers\\Cars.php', 157)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->search()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 20:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 20:06:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), NULL, 10, -10)
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 20:06:57 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[Method: GET, Route: cars/index/0]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 2 APPPATH\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 3 APPPATH\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 20:06:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 4 APPPATH\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 20:06:57 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 6 APPPATH\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 20:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 20:08:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), NULL, 10, -10)
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 20:08:19 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[Method: GET, Route: cars/index/0]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 2 APPPATH\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 3 APPPATH\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 20:08:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 4 APPPATH\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 20:08:19 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 6 APPPATH\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 20:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 20:09:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), NULL, 10, -10)
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-16 20:09:09 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[Method: GET, Route: cars/index/0]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 2 APPPATH\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 3 APPPATH\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 20:09:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 4 APPPATH\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 20:09:09 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_car WHERE 1 = 1 AND active = 1 AND driverId = 1 LIMIT 10 OFFSET -10')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 5 APPPATH\Models\Services\CarService.php(153): App\Models\Application\Data->query('SELECT * FROM t_car WHERE 1 = 1 AND active = ? AND driverId = ? LIMIT 10 OFFSET -10', [...])
+ 6 APPPATH\Controllers\Cars.php(46): App\Models\Services\CarService->read(Object(App\Models\Classes\Filters\CarFilter), null, 10, -10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars->index('0')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-03-16 20:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 20:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 20:15:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? WHERE 1=1  AND accessId = ? AND active = ?' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE t_access...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE t_access...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE t_access...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('UPDATE t_access...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(86): App\Models\Application\Data->query('UPDATE t_access...', Array)
+#5 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(95): App\Models\Services\AccessesService->update(Object(App\Models\Classes\Filters\AccessesFilter), Object(App\Models\Classes\Filters\AccessesFilter))
+#6 F:\UniServerZ\www\ci4\app\Models\ApplicationUtilities.php(88): App\Models\Services\AccessesService->delete(Object(App\Models\Classes\Filters\AccessesFilter))
+#7 F:\UniServerZ\www\ci4\app\Controllers\Homepage.php(237): App\Models\ApplicationUtilities::logout()
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Homepage->logout()
+#9 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#10 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+DEBUG - 2025-03-16 22:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 22:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 22:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 22:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 22:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 22:49:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? WHERE 1=1  AND accessId = ? AND active = ?' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE t_access...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE t_access...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE t_access...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('UPDATE t_access...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(86): App\Models\Application\Data->query('UPDATE t_access...', Array)
+#5 F:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(95): App\Models\Services\AccessesService->update(Object(App\Models\Classes\Filters\AccessesFilter), Object(App\Models\Classes\Filters\AccessesFilter))
+#6 F:\UniServerZ\www\ci4\app\Models\ApplicationUtilities.php(88): App\Models\Services\AccessesService->delete(Object(App\Models\Classes\Filters\AccessesFilter))
+#7 F:\UniServerZ\www\ci4\app\Controllers\Homepage.php(237): App\Models\ApplicationUtilities::logout()
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Homepage->logout()
+#9 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#10 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+DEBUG - 2025-03-16 23:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:32:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 23:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

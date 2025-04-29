@@ -1,0 +1,918 @@
+CRITICAL - 2025-03-13 15:43:26 --> ParseError: syntax error, unexpected identifier "model"
+[Method: GET, Route: login]
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\Router\Router.php(565): CodeIgniter\Router\AutoRouter->getRoute('login', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(231): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:43:34 --> Error: Call to a member function login() on null
+[Method: POST, Route: login/auth]
+in APPPATH\Controllers\Login.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:43:54 --> Error: Call to a member function login() on null
+[Method: POST, Route: login/auth]
+in APPPATH\Controllers\Login.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:43:57 --> Error: Call to a member function login() on null
+[Method: POST, Route: login/auth]
+in APPPATH\Controllers\Login.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:43:59 --> Error: Call to a member function login() on null
+[Method: POST, Route: login/auth]
+in APPPATH\Controllers\Login.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:44:18 --> Error: Call to a member function login() on null
+[Method: POST, Route: login/auth]
+in APPPATH\Controllers\Login.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:46:41 --> Error: Class "App\Models\UserService" not found
+[Method: POST, Route: login/auth]
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:46:58 --> Error: Class "App\Models\UserService" not found
+[Method: POST, Route: login/auth]
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:47:40 --> Error: Call to a member function query() on null
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 14.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', '$2y$10$TSGSblXRtfC0YX00DpqEUeynFieDgJrh6kK3yBpdecRA3l1fnQMZG')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:48:00 --> Error: Call to a member function query() on null
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 14.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', '$2y$10$23vC2K.ZKjc4SJHYZy.eWODSVbKDnXgnpGsP16hMS1TGwoU3u4the')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 15:49:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'lollo'@'localhost' (using password: YES) in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'lollo', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(14): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', '$2y$10$vk6JrqC/...')
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#3 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(14): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', '$2y$10$vk6JrqC/...')
+#5 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-13 15:49:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Application\Data.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_user WHERE email = :email', [...])
+ 3 APPPATH\Models\Services\UserService.php(14): App\Models\Application\Data->query('SELECT * FROM t_user WHERE email = :email', [...])
+ 4 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', '$2y$10$vk6JrqC/Zi4emLfQ.yWXrOgLXJYvce4eov60PODgq0BddlmwGLjbu')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 15:49:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':email' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(14): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', '$2y$10$ucYu5E3e...')
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-13 15:49:44 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':email' at line 1
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_user WHERE email = :email', [...])
+ 2 APPPATH\Models\Services\UserService.php(14): App\Models\Application\Data->query('SELECT * FROM t_user WHERE email = :email', [...])
+ 3 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', '$2y$10$ucYu5E3eyCCytaTRlFC34uPa1BSppHaqLfG83XgtnXcQOe3gPQoqa')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:49:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':email' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_user WHERE email = :email')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_user WHERE email = :email')
+ 3 APPPATH\Models\Application\Data.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_user WHERE email = :email', [...])
+ 4 APPPATH\Models\Services\UserService.php(14): App\Models\Application\Data->query('SELECT * FROM t_user WHERE email = :email', [...])
+ 5 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', '$2y$10$ucYu5E3eyCCytaTRlFC34uPa1BSppHaqLfG83XgtnXcQOe3gPQoqa')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:49:44 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':email' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t_user WHERE email = :email', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t_user WHERE email = :email')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t_user WHERE email = :email')
+ 4 APPPATH\Models\Application\Data.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_user WHERE email = :email', [...])
+ 5 APPPATH\Models\Services\UserService.php(14): App\Models\Application\Data->query('SELECT * FROM t_user WHERE email = :email', [...])
+ 6 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', '$2y$10$ucYu5E3eyCCytaTRlFC34uPa1BSppHaqLfG83XgtnXcQOe3gPQoqa')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:55:16 --> ParseError: syntax error, unexpected token "}", expecting "("
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\UniServerZ\\www\\ci4\\app\\Models\\Services\\UserService.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Services\\UserService')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Services\\UserService')
+ 4 SYSTEMPATH\Config\Factories.php(297): class_exists('App\\Models\\Services\\UserService')
+ 5 SYSTEMPATH\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\Services\\UserService')
+ 6 SYSTEMPATH\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\Services\\UserService', [...])
+ 7 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\Login.php(17): model('App\\Models\\Services\\UserService')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:55:34 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 18.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$9Wy0Edd0s7mVockqd47h7Ojh8CZHh6PoPUJ1lTvGdDnUUjBtAK.HW')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:56:02 --> ErrorException: Undefined variable $num_rows
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 18.
+ 1 APPPATH\Models\Services\UserService.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num_rows', 'F:\\UniServerZ\\www\\ci4\\app\\Models\\Services\\UserService.php', 18)
+ 2 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$pUsCaLT.LjqYisB.7vx2B.nUWzbS7BagX2Y67d1ObJcxvBkiOuTdC')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:56:08 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 18.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$gaPtmd3I9S8JEwbCdLKr8OCHxwP4WMpl4yW272LaXofa2dtprzzlq')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:56:25 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 19.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$0iitQaEJsYCdE8WpeM3YEO/1hZssa5Hooqw3ABSA0pSYbDT7Oj9x.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:56:28 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 19.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$dKQksPa0cz5bK63qNsVE7.IPs.Mdu1hIqooZRngX85u1bQ7nb0uVe')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:56:35 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 20.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$/ig0WyWaVG1ODfe6KL7vue71MoeO06t/Pr9UJrXPFQF9omu6jAqCu')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:56:40 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 20.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$N0ASJw.J6avr95mcrvyqkuQMrLvGbiWAdar1z5I2ynmhUxZiuElq2')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:56:42 --> TypeError: App\Models\Services\UserService::login(): Return value must be of type bool, none returned
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 25.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$BG5kQ/ggr4WhFzzQR4nqjeIkEnKckQ9jkEQ5hBk8OFDrcLRVXD3Fi')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:56:44 --> TypeError: App\Models\Services\UserService::login(): Return value must be of type bool, none returned
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 25.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$QLF/lLSsrZtBd1eTrQ75JOV8PtWfz8brGYz.OZLvUD4rBoEpizACG')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:57:05 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 18.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$nWCgKxzocVqFsLkZTx0bv.4q4FZ2db.QSUy3EFFteU3UDS6Gw/vni')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:57:11 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 18.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$XqLDxqewcJKHF8Rjk3Zp4uh/SlH7sFzP74p5pV.IABnr5CaIleuI.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 15:59:47 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$num_rows
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 19.
+ 1 APPPATH\Models\Services\UserService.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$num_rows', 'F:\\UniServerZ\\www\\ci4\\app\\Models\\Services\\UserService.php', 19)
+ 2 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$RMGnYWsNoJQDAqsWa28ca.zHSMaTJrfn9amdPZwSRdMtx0t1DA5ni')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 16:01:53 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 26.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$8ZSGrbl/heWu4mDyQrpUvun.V4OXKanoJbu6K3dsNaQqOm88Oav7G')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 16:02:04 --> Error: Object of class stdClass could not be converted to string
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 26.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$rKxgb4jpArDZDiAsNEsJSeyHSk3YtkJ99Wi6OenxU5Sh.lPd8b.au')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 16:02:12 --> Error: Object of class stdClass could not be converted to string
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 26.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('tommaso.mistron8@gmail.com', '$2y$10$4vmQv8Mgc/lW4uL6XTLXWer1T5BHE.fpmyF1i3yaXF/VSkW9RHedm')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 19:31:55 --> Error: Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 17.
+ 1 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', 'a')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 19:33:41 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('192.168.155.8', 'lollo', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(13): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', 'a')
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#3 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(13): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', 'a')
+#5 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-13 19:33:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t_user WHERE email = ?', [...])
+ 3 APPPATH\Models\Services\UserService.php(13): App\Models\Application\Data->query('SELECT * FROM t_user WHERE email = ?', [...])
+ 4 APPPATH\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', 'a')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 19:33:58 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('192.168.155.8', 'lollo', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(14): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', 'a')
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#3 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(14): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Controllers\Login.php(19): App\Models\Services\UserService->login('a@a.it', 'a')
+#5 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-13 19:43:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "welcome_page.php"
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_page.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('welcome_page', [], true)
+ 3 APPPATH\Controllers\Login.php(24): view('welcome_page')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 19:44:12 --> Error connecting to the database: mysqli_sql_exception: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('192.168.155.8', 'lollo', Object(SensitiveParameterValue), 'sharelinks', 3306, '', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(13): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Login.php(23): App\Models\Services\UserService->login('a@a.it', 'a')
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#3 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(13): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Controllers\Login.php(23): App\Models\Services\UserService->login('a@a.it', 'a')
+#5 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-13 20:40:56 --> TypeError: get_object_vars(): Argument #1 ($object) must be of type object, array given
+[Method: POST, Route: register/register]
+in APPPATH\Controllers\Register.php on line 43.
+ 1 APPPATH\Controllers\Register.php(43): get_object_vars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 20:42:47 --> ReflectionException: Class "User" does not exist
+[Method: POST, Route: register/register]
+in APPPATH\Controllers\Register.php on line 45.
+ 1 APPPATH\Controllers\Register.php(45): ReflectionClass->__construct('User')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 20:42:50 --> ReflectionException: Class "User" does not exist
+[Method: POST, Route: register/register]
+in APPPATH\Controllers\Register.php on line 45.
+ 1 APPPATH\Controllers\Register.php(45): ReflectionClass->__construct('User')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 20:44:22 --> ReflectionException: Class "User" does not exist
+[Method: POST, Route: register/register]
+in APPPATH\Controllers\Register.php on line 43.
+ 1 APPPATH\Controllers\Register.php(43): ReflectionClass->__construct('User')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 20:53:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_u...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_u...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_u...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_u...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(39): App\Models\Application\Data->query('INSERT INTO t_u...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Register.php(44): App\Models\Services\UserService->register(Object(App\Models\Classes\User))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Register->register()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-13 20:54:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_u...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_u...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_u...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_u...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(39): App\Models\Application\Data->query('INSERT INTO t_u...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Register.php(44): App\Models\Services\UserService->register(Object(App\Models\Classes\User))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Register->register()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-13 21:03:16 --> Error: Object of class DateTime could not be converted to string
+[Method: POST, Route: register/register]
+in SYSTEMPATH\Database\Query.php on line 364.
+ 1 SYSTEMPATH\Database\Query.php(306): CodeIgniter\Database\Query->matchSimpleBinds('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (?, ?, ?, ?, \'$2y$10$3/OIo1E3j2fsoYgxrH/vD.PbwbRfpmHHkPMWPCrB1OzcqyCUBa8em\', \'A\', \'t@t.it\')', [...], 7, 1)
+ 2 SYSTEMPATH\Database\Query.php(163): CodeIgniter\Database\Query->compileBinds()
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\Query->getQuery()
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 5 APPPATH\Models\Services\UserService.php(35): App\Models\Application\Data->query('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 6 APPPATH\Controllers\Register.php(44): App\Models\Services\UserService->register(Object(App\Models\Classes\User))
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 21:04:12 --> mysqli_sql_exception: Duplicate entry 't@t.it' for key 'email' in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_u...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_u...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_u...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_u...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(35): App\Models\Application\Data->query('INSERT INTO t_u...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Register.php(44): App\Models\Services\UserService->register(Object(App\Models\Classes\User))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Register->register()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-13 21:04:37 --> mysqli_sql_exception: Duplicate entry 't@t.it' for key 'email' in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_u...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_u...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_u...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_u...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(35): App\Models\Application\Data->query('INSERT INTO t_u...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Register.php(44): App\Models\Services\UserService->register(Object(App\Models\Classes\User))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Register->register()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-13 21:04:54 --> mysqli_sql_exception: Duplicate entry 't@t.it' for key 'email' in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_u...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_u...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_u...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_u...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(35): App\Models\Application\Data->query('INSERT INTO t_u...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Register.php(44): App\Models\Services\UserService->register(Object(App\Models\Classes\User))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Register->register()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-13 21:05:16 --> mysqli_sql_exception: Duplicate entry 't@t.it' for key 'email' in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_u...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_u...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_u...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_u...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(35): App\Models\Application\Data->query('INSERT INTO t_u...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Register.php(44): App\Models\Services\UserService->register(Object(App\Models\Classes\User))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Register->register()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-13 21:05:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 't@t.it' for key 'email'
+[Method: POST, Route: register/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Models\Services\UserService.php(35): App\Models\Application\Data->query('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 3 APPPATH\Controllers\Register.php(44): App\Models\Services\UserService->register(Object(App\Models\Classes\User))
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 21:05:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 't@t.it' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (\'Thomas\', \'Thomas\', \'Cruciani\', \'1234-03-12\', \'$2y$10$Gvyy7CYnTCxaP2kow/lamOqM9pe2hgMvsa0GRlOcHhFGdZAwO9xjK\', \'A\', \'t@t.it\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (\'Thomas\', \'Thomas\', \'Cruciani\', \'1234-03-12\', \'$2y$10$Gvyy7CYnTCxaP2kow/lamOqM9pe2hgMvsa0GRlOcHhFGdZAwO9xjK\', \'A\', \'t@t.it\')')
+ 3 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 4 APPPATH\Models\Services\UserService.php(35): App\Models\Application\Data->query('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 5 APPPATH\Controllers\Register.php(44): App\Models\Services\UserService->register(Object(App\Models\Classes\User))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 21:05:16 --> [Caused by] mysqli_sql_exception: Duplicate entry 't@t.it' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (\'Thomas\', \'Thomas\', \'Cruciani\', \'1234-03-12\', \'$2y$10$Gvyy7CYnTCxaP2kow/lamOqM9pe2hgMvsa0GRlOcHhFGdZAwO9xjK\', \'A\', \'t@t.it\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (\'Thomas\', \'Thomas\', \'Cruciani\', \'1234-03-12\', \'$2y$10$Gvyy7CYnTCxaP2kow/lamOqM9pe2hgMvsa0GRlOcHhFGdZAwO9xjK\', \'A\', \'t@t.it\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (\'Thomas\', \'Thomas\', \'Cruciani\', \'1234-03-12\', \'$2y$10$Gvyy7CYnTCxaP2kow/lamOqM9pe2hgMvsa0GRlOcHhFGdZAwO9xjK\', \'A\', \'t@t.it\')')
+ 4 APPPATH\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 5 APPPATH\Models\Services\UserService.php(35): App\Models\Application\Data->query('INSERT INTO t_user (username, name, surname, birthDate, password, fiscalCode, email) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
+ 6 APPPATH\Controllers\Register.php(44): App\Models\Services\UserService->register(Object(App\Models\Classes\User))
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 21:17:24 --> TypeError: App\Models\Services\UserService::read(): Argument #1 ($u) must be of type ?App\Models\Classes\Filters\UserFilter, string given, called in F:\UniServerZ\www\ci4\app\Controllers\Login.php on line 23
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 12.
+ 1 APPPATH\Controllers\Login.php(23): App\Models\Services\UserService->read('a@a.it1', 'a')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 21:19:37 --> Error: Call to undefined method App\Models\Services\UserService::register()
+[Method: POST, Route: register/register]
+in APPPATH\Controllers\Register.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-03-13 21:22:25 --> [DEPRECATED] password_verify(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Models\Services\UserService.php on line 25.
+ 1 APPPATH\Models\Services\UserService.php(25): password_verify(Object(SensitiveParameterValue), '$2y$10$ENzoe87do2O8C6EjIIxL9.R4.l9M1R8UVLBIB4qi7rssC/.L/18cC')
+ 2 APPPATH\Controllers\Register.php(58): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 21:22:26 --> mysqli_sql_exception: Duplicate entry 'a@a.it' for key 'email' in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_u...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_u...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_u...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_u...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(36): App\Models\Application\Data->query('INSERT INTO t_u...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Register.php(64): App\Models\Services\UserService->create(Object(App\Models\Classes\User))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Register->register()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+WARNING - 2025-03-13 21:22:52 --> [DEPRECATED] password_verify(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Models\Services\UserService.php on line 25.
+ 1 APPPATH\Models\Services\UserService.php(25): password_verify(Object(SensitiveParameterValue), '$2y$10$ENzoe87do2O8C6EjIIxL9.R4.l9M1R8UVLBIB4qi7rssC/.L/18cC')
+ 2 APPPATH\Controllers\Register.php(58): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 21:22:52 --> mysqli_sql_exception: Duplicate entry 'a@a.it' for key 'email' in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_u...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_u...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_u...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_u...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(36): App\Models\Application\Data->query('INSERT INTO t_u...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Register.php(64): App\Models\Services\UserService->create(Object(App\Models\Classes\User))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Register->register()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+WARNING - 2025-03-13 21:23:28 --> [DEPRECATED] password_verify(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Models\Services\UserService.php on line 25.
+ 1 APPPATH\Models\Services\UserService.php(25): password_verify(Object(SensitiveParameterValue), '$2y$10$ENzoe87do2O8C6EjIIxL9.R4.l9M1R8UVLBIB4qi7rssC/.L/18cC')
+ 2 APPPATH\Controllers\Register.php(58): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 21:23:28 --> mysqli_sql_exception: Duplicate entry 'a@a.it' for key 'email' in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_u...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_u...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_u...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_u...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(36): App\Models\Application\Data->query('INSERT INTO t_u...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Register.php(64): App\Models\Services\UserService->create(Object(App\Models\Classes\User))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Register->register()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+WARNING - 2025-03-13 21:24:02 --> [DEPRECATED] password_verify(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Models\Services\UserService.php on line 25.
+ 1 APPPATH\Models\Services\UserService.php(25): password_verify(Object(SensitiveParameterValue), '$2y$10$ENzoe87do2O8C6EjIIxL9.R4.l9M1R8UVLBIB4qi7rssC/.L/18cC')
+ 2 APPPATH\Controllers\Register.php(58): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-03-13 21:24:02 --> [DEPRECATED] password_verify(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Models\Services\UserService.php on line 25.
+ 1 APPPATH\Models\Services\UserService.php(25): password_verify(Object(SensitiveParameterValue), '$2y$10$ENzoe87do2O8C6EjIIxL9.R4.l9M1R8UVLBIB4qi7rssC/.L/18cC')
+ 2 APPPATH\Controllers\Register.php(60): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 21:24:02 --> mysqli_sql_exception: Duplicate entry 'a@a.it' for key 'email' in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_u...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_u...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_u...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_u...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(36): App\Models\Application\Data->query('INSERT INTO t_u...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Register.php(66): App\Models\Services\UserService->create(Object(App\Models\Classes\User))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Register->register()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+WARNING - 2025-03-13 21:24:22 --> [DEPRECATED] password_verify(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Models\Services\UserService.php on line 25.
+ 1 APPPATH\Models\Services\UserService.php(25): password_verify(Object(SensitiveParameterValue), '$2y$10$ENzoe87do2O8C6EjIIxL9.R4.l9M1R8UVLBIB4qi7rssC/.L/18cC')
+ 2 APPPATH\Controllers\Register.php(58): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-03-13 21:24:22 --> [DEPRECATED] password_verify(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Models\Services\UserService.php on line 25.
+ 1 APPPATH\Models\Services\UserService.php(25): password_verify(Object(SensitiveParameterValue), '$2y$10$ENzoe87do2O8C6EjIIxL9.R4.l9M1R8UVLBIB4qi7rssC/.L/18cC')
+ 2 APPPATH\Controllers\Register.php(60): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->register()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-13 21:24:22 --> mysqli_sql_exception: Duplicate entry 'tommaso.mistron8@gmail.com' for key 'email' in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO t_u...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO t_u...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO t_u...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO t_u...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(36): App\Models\Application\Data->query('INSERT INTO t_u...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Register.php(66): App\Models\Services\UserService->create(Object(App\Models\Classes\User))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Register->register()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-13 21:38:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@a.com = 'thomas.com@a.com'' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(26): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Login.php(23): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-13 21:39:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@thomas.com = 't@thomas.com'' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(26): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Login.php(23): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-13 21:39:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND 1 = 1 AND b.b@b.ti = 'b.b@b.ti'' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(26): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Login.php(23): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-13 21:42:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND active = 1 AND email = 'b@b.it'' at line 1 in F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 F:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 F:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 F:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 F:\UniServerZ\www\ci4\app\Models\Services\UserService.php(27): App\Models\Application\Data->query('SELECT * FROM t...', Array)
+#5 F:\UniServerZ\www\ci4\app\Controllers\Login.php(23): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+#6 F:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Login->auth()
+#7 F:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 F:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 F:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-13 21:43:35 --> TypeError: view(): Argument #2 ($data) must be of type array, stdClass given, called in F:\UniServerZ\www\ci4\app\Controllers\Login.php on line 27
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Common.php on line 1161.
+ 1 APPPATH\Controllers\Login.php(27): view('welcome_message', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 21:45:40 --> TypeError: view(): Argument #2 ($data) must be of type array, stdClass given, called in F:\UniServerZ\www\ci4\app\Controllers\Login.php on line 30
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Common.php on line 1161.
+ 1 APPPATH\Controllers\Login.php(30): view('welcome_message', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-13 22:06:22 --> ArgumentCountError: Too few arguments to function App\Models\Services\UserService::read(), 1 passed in F:\UniServerZ\www\ci4\app\Controllers\Login.php on line 23 and exactly 2 expected
+[Method: POST, Route: login/auth]
+in APPPATH\Models\Services\UserService.php on line 11.
+ 1 APPPATH\Controllers\Login.php(23): App\Models\Services\UserService->read(Object(App\Models\Classes\Filters\UserFilter))
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

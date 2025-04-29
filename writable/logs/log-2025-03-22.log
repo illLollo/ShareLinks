@@ -1,0 +1,38 @@
+DEBUG - 2025-03-22 11:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-22 11:02:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? WHERE 1=1  AND accessId = ? AND active = ?' at line 1 in E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 E:\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE t_access...', 0)
+#1 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE t_access...')
+#2 E:\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE t_access...')
+#3 E:\UniServerZ\www\ci4\app\Models\Application\Data.php(13): CodeIgniter\Database\BaseConnection->query('UPDATE t_access...', Array)
+#4 E:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(86): App\Models\Application\Data->query('UPDATE t_access...', Array)
+#5 E:\UniServerZ\www\ci4\app\Models\Services\AccessesService.php(95): App\Models\Services\AccessesService->update(Object(App\Models\Classes\Filters\AccessesFilter), Object(App\Models\Classes\Filters\AccessesFilter))
+#6 E:\UniServerZ\www\ci4\app\Models\ApplicationUtilities.php(88): App\Models\Services\AccessesService->delete(Object(App\Models\Classes\Filters\AccessesFilter))
+#7 E:\UniServerZ\www\ci4\app\Controllers\Homepage.php(237): App\Models\ApplicationUtilities::logout()
+#8 E:\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Homepage->logout()
+#9 E:\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#10 E:\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 E:\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 E:\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+DEBUG - 2025-03-22 11:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 11:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
