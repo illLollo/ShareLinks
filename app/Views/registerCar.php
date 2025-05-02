@@ -25,7 +25,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="plateNumber" class="form-label">Numero Di Targa</label>
-                            <input type="text" class="form-control" id="plateNumber" name="plateNumber" required>
+                            <input type="text" class="form-control" id="plateNumber" name="plateNumber" maxlength="7" required>
                         </div>
                         <div class="mb-3">
                             <label for="productionDate" class="form-label">Data di Produzione</label>

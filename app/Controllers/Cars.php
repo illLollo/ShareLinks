@@ -184,19 +184,23 @@ class Cars extends BaseController
         $carService = model(CarService::class);
         $carId = $_POST["carId"];
 
-        $res = $carService->where('driverId', $driver->driverId)->update(
-            $carId,
-            [
-                'name' => $_POST["name"],
-                'plateNumber' => $_POST["plateNumber"],
-                'productionDate' => (new DateTime($_POST["productionDate"]))->format("Y-m-d"),
-                'model' => $_POST["model"],
-                'euroPerKilometer' => $_POST["euroPerKilometer"],
-                'co2PerKilometer' => $_POST["co2PerKilometer"]
-            ]
-        );
+        try {
+            $res = $carService->where('driverId', $driver->driverId)->update(
+                $carId,
+                [
+                    'name' => $_POST["name"],
+                    'plateNumber' => $_POST["plateNumber"],
+                    'productionDate' => (new DateTime($_POST["productionDate"]))->format("Y-m-d"),
+                    'model' => $_POST["model"],
+                    'euroPerKilometer' => $_POST["euroPerKilometer"],
+                    'co2PerKilometer' => $_POST["co2PerKilometer"]
+                ]
+            );
+            $session->setFlashdata("toastMessage", $res ? ApplicationConstants::$UPDATE_SUCCESSFULLY : ApplicationConstants::$UPDATE_FAILED);
+        } catch (DatabaseException $e) {
+            $session->setFlashdata("toastMessage", ApplicationConstants::$UPDATE_FAILED);
+        }
 
-        $session->setFlashdata("toastMessage", $res ? ApplicationConstants::$UPDATE_SUCCESSFULLY : ApplicationConstants::$UPDATE_FAILED);
         return redirect()->to("/cars/details/$carId");
     }
 

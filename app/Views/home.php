@@ -165,7 +165,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="fw-bold">Come funziona</h2>
-                <p class="lead text-muted">Inizia a usare ShareLink in pochi semplici passaggi</p>
+                <p class="lead text-muted">Inizia a usare ShareLinks in pochi semplici passaggi</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
@@ -243,7 +243,7 @@
                                     <small class="text-muted">Passeggera frequente</small>
                                 </div>
                             </div>
-                            <p class="mb-0">"Grazie a ShareLink riesco a risparmiare sui miei spostamenti quotidiani e ho conosciuto persone fantastiche!"</p>
+                            <p class="mb-0">"Grazie a ShareLinks riesco a risparmiare sui miei spostamenti quotidiani e ho conosciuto persone fantastiche!"</p>
                         </div>
                     </div>
                 </div>
@@ -283,7 +283,7 @@
     <section class="py-5 bg-light fade-in">
         <div class="container text-center">
             <h2 class="fw-bold mb-4">Pronto a iniziare?</h2>
-            <p class="lead mb-4">Unisciti alla community di ShareLink e contribuisci a un futuro più sostenibile.</p>
+            <p class="lead mb-4">Unisciti alla community di ShareLinks e contribuisci a un futuro più sostenibile.</p>
             <a href=" <?= base_url("/register") ?>" class="btn btn-danger btn-lg px-4">Registrati ora</a>
         </div>
     </section>

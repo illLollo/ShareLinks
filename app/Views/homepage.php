@@ -6,18 +6,13 @@
     <title>HOMEPAGE</title>
     <link rel="stylesheet" href="<?= base_url('/Style/global.css') ?>">
 </head>
-<body>
+<body style="position: relative; margin: 0 !important;">
 <style>
     :root {
         --primary-color: #2E8B57;
         --secondary-color: #3AA76D;
         --light-gray: #F8F9FA;
     }
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: var(--light-gray);
-    }
-    .navbar-brand img { height: 40px; }
     .btn-primary {
         background-color: var(--primary-color);
         border: none;
@@ -51,38 +46,116 @@
     .price-badge {
         background-color: var(--primary-color);
     }
-    body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        height: 100vh;
-        overflow-y: hidden;
-    }
 
     .sidebar {
-        width: 45%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25%; /* Adjusted width for better visibility */
+        height: 100%;
         background-color: #f8f9fa;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        overflow-y: scroll;
-        height: 100vh;
+        overflow-y: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .sidebar.hidden {
+        transform: translateX(-100%);
     }
 
     .map-container {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
     }
 
     #map {
-    height: 400px; /* The height is 400 pixels */
-    width: 400px; /* The width is the width of the web page */
-}
+        height: 100%;
+        width: 100%;
+    }
+
+    .toggle-sidebar-btn {
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: grey;
+        color: white;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .toggle-sidebar-btn:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-container {
+            position: absolute;
+            top: 56px; /* Adjusted for navbar height */
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 56px);
+            z-index: 1;
+        }
+
+        .sidebar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 300px; /* Default height when visible */
+            background-color: #f8f9fa;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            z-index: 2;
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(100%); /* Hidden by default */
+        }
+
+        .sidebar.visible {
+            transform: translateY(0);
+        }
+
+        .drag-handle {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 5px;
+            background-color: #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        };
+
+    }
 </style>
-<div class="fade-in">
 <?php if (session()->has('toastMessage')): ?>
         <?= view('toast') ?>
-    <?php endif; ?>
-<body class="driver-bg">
-
-    <div class="sidebar">
+<?php endif; ?>
+<div class="d-flex" style="height: 92vh; margin-top: 8vh;">
+    <div class="sidebar fade-in" style="z-index: 1;">
         <!-- Main Content -->
         <div class="container py-5">
             <div class="row justify-content-center">
@@ -140,7 +213,7 @@
                                 </div>
 
                                 <!-- Preferences -->
-                                <div class="mb-4">
+                                <!-- <div class="mb-4">
                                     <label class="form-label">Preferenze</label>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="smokingAllowed">
@@ -154,7 +227,7 @@
                                         <input class="form-check-input" type="checkbox" id="luggage">
                                         <label class="form-check-label" for="luggage">Bagaglio voluminoso</label>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <button type="submit" class="btn btn-primary w-100 py-2">
                                     <i class="fas fa-search me-2"></i>Cerca viaggi disponibili
@@ -262,13 +335,17 @@
                 </div>
             </div>
         </div>
+        <button>Nascondi</button>
     </div>
 
-    <div class="map-container">
+    <div class="map-container fade-in" style="z-index: 0;">
         <div id="map"></div>
-        </div>
-<script defer>
-        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+    </div>
+</div>
+</body>
+
+<script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+",places");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
         key: "AIzaSyAZb0l2AiZau6rPCfhGmH7-9CaZFycIK4w",
         v: "weekly",
         // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
@@ -277,36 +354,135 @@
     // Initialize and add the map
     let map;
 
+    let departureInput = document.getElementById("departure");
+    let destinationInput = document.getElementById("destination");
+    let departureAutocomplete;
+    let destinationAutocomplete;
+    let departureMarker;
+    let destinationMarker;
+    let userMarker;
+
+    function initAutocomplete() {
+        // Initialize autocomplete for departure and destination inputs
+        departureAutocomplete = new google.maps.places.Autocomplete(departureInput);
+        destinationAutocomplete = new google.maps.places.Autocomplete(destinationInput);
+
+        // Add listeners for place selection
+        departureAutocomplete.addListener("place_changed", () => {
+            const place = departureAutocomplete.getPlace();
+            if (!place.geometry || !place.geometry.location) {
+                console.error("Place has no geometry");
+                return;
+            }
+
+            // Remove user marker if it exists
+            if (userMarker) {
+                userMarker.setMap(null);
+            }
+
+            // Remove previous departure marker
+            if (departureMarker) {
+                departureMarker.setMap(null);
+            }
+
+            // Add new marker for departure
+            departureMarker = new google.maps.Marker({
+                position: place.geometry.location,
+                map: map,
+                title: "Partenza",
+            });
+
+            // Center the map on the departure location
+            map.setCenter(place.geometry.location);
+        });
+
+        destinationAutocomplete.addListener("place_changed", () => {
+            const place = destinationAutocomplete.getPlace();
+            if (!place.geometry || !place.geometry.location) {
+                console.error("Place has no geometry");
+                return;
+            }
+
+            // Remove user marker if it exists
+            if (userMarker) {
+                userMarker.setMap(null);
+            }
+
+            // Remove previous destination marker
+            if (destinationMarker) {
+                destinationMarker.setMap(null);
+            }
+
+            // Add new marker for destination
+            destinationMarker = new google.maps.Marker({
+                position: place.geometry.location,
+                map: map,
+                title: "Destinazione",
+            });
+
+            // Center the map on the destination location
+            map.setCenter(place.geometry.location);
+        });
+    }
+
     async function initMap() {
-    // The location of Uluru
-    const position = { lat: -25.344, lng: 131.031 };
-    // Request needed libraries.
-    //@ts-ignore
-    const { Map } = await google.maps.importLibrary("maps");
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+        // The location of Uluru
+        const position = { lat: -25.344, lng: 131.031 };
+        // Request needed libraries.
+        //@ts-ignore
+        const { Map } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-    // The map, centered at Uluru
-    map = new Map(document.getElementById("map"), {
-        zoom: 4,
-        center: position,
-        mapId: "DEMO_MAP_ID",
-    });
+        // The map, centered at Uluru
+        map = new Map(document.getElementById("map"), {
+            zoom: 4,
+            center: position,
+            mapId: "DEMO_MAP_ID",
+        });
 
-    // The marker, positioned at Uluru
-    const marker = new AdvancedMarkerElement({
-        map: map,
-        position: position,
-        title: "Uluru",
-    });
+        // The marker, positioned at Uluru
+        const marker = new AdvancedMarkerElement({
+            map: map,
+            position: position,
+            title: "Uluru",
+        });
+
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const userPosition = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude,
+                };
+
+                // Center the map on the user's location
+                map.setCenter(userPosition);
+                map.setZoom(18); // Higher zoom for more precision
+
+                // Add a marker for the user's location
+                userMarker = new google.maps.Marker({
+                    position: userPosition,
+                    map: map,
+                    title: "La tua posizione precisa",
+                });
+            },
+            (error) => {
+                console.error("Errore nel recupero della posizione:", error);
+            },
+            {
+                enableHighAccuracy: true, // Request more precise location
+            }
+        );
+
+        initAutocomplete();
     }
 
     initMap();
-    </script>
-</body>
-</html>
-    <?= view("footer") ?>
-</div>
+
+    function toggleSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.toggle('hidden');
+    }
+</script>
 <script src="<?= base_url('/Script/observer.js'); ?>"></script>
-</body>
 </html>
 
