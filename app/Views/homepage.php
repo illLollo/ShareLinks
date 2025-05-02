@@ -190,7 +190,7 @@
                                 </div>
 
                                 <!-- Date and Time -->
-                                <div class="row mb-4">
+                                <!-- <div class="row mb-4">
                                     <div class="col-md-6 mb-3 mb-md-0">
                                         <label for="rideDate" class="form-label">Data</label>
                                         <input type="date" class="form-control" id="rideDate" required>
@@ -199,7 +199,7 @@
                                         <label for="rideTime" class="form-label">Orario</label>
                                         <input type="time" class="form-control" id="rideTime" required>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <!-- Passengers -->
                                 <div class="mb-4">
@@ -482,6 +482,54 @@
         const sidebar = document.querySelector('.sidebar');
         sidebar.classList.toggle('hidden');
     }
+
+    document.getElementById("rideRequestForm").addEventListener("submit", async (event) => {
+        event.preventDefault(); // Prevent the default form submission
+
+        if (!departureMarker || !destinationMarker) {
+            alert("Per favore, seleziona sia la partenza che la destinazione sulla mappa.");
+            return;
+        }
+
+        const departureCoords = {
+            lat: departureMarker.getPosition().lat(),
+            lng: departureMarker.getPosition().lng(),
+        };
+
+        const destinationCoords = {
+            lat: destinationMarker.getPosition().lat(),
+            lng: destinationMarker.getPosition().lng(),
+        };
+
+        try {
+            const directionsService = new google.maps.DirectionsService();
+
+            // Request directions from Google Maps API
+            const result = await directionsService.route({
+                origin: departureCoords,
+                destination: destinationCoords,
+                travelMode: google.maps.TravelMode.DRIVING, // You can change this to WALKING, BICYCLING, or TRANSIT
+                provideRouteAlternatives: true, // Request multiple route options
+            });
+
+            console.log("Dettagli delle opzioni di percorso:", result.routes);
+
+            // Log the minimal data needed to reconstruct the route
+            result.routes.forEach((route, index) => {
+                const minimalData = {
+                    start_location: route.legs[0].start_location, // Starting point
+                    end_location: route.legs[0].end_location, // Ending point
+                    polyline: route.overview_polyline, // Compressed polyline
+                };
+
+                console.log(`Percorso ${index + 1}:`);
+                console.log("Dati minimi per ricostruire il percorso:", minimalData);
+            });
+        } catch (error) {
+            console.error("Errore durante la ricerca dei percorsi:", error);
+            alert("Si è verificato un errore durante la ricerca dei percorsi. Riprova più tardi.");
+        }
+    });
 </script>
 <script src="<?= base_url('/Script/observer.js'); ?>"></script>
 </html>
