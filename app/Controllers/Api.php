@@ -4,52 +4,43 @@ namespace App\Controllers;
 use App\Models\Services\TripService;
 
 class Api extends BaseController {
-    public function getTripsOnRoute()
+    public function getTripsNearUser()
     {
-        $startLat = $this->request->getPost('startLat');
-        $startLng = $this->request->getPost('startLng');
-        $endLat = $this->request->getPost('endLat');
-        $endLng = $this->request->getPost('endLng');
+        $data = json_decode(file_get_contents('php://input'), true);
 
-        if (!$startLat || !$startLng || !$endLat || !$endLng) {
+        $userLat = (float)$data["lat"];
+        $userLng = (float)$data['lng'];
+
+        if (!$userLat || !$userLng) {
             return $this->response->setJSON([
-                'error' => 'Invalid input. Please provide start and end coordinates.'
+                'error' => 'Invalid input. Please provide user coordinates.'
             ])->setStatusCode(400);
         }
 
         $tripService = model(TripService::class);
 
-        // Retrieve all trips with their polylines
-        $trips = $tripService->table()->select('t_trip.*, t_step.*')->get()->getResultArray();
+        $query = $tripService->table()
+            ->select('t_step.*')->where('t_step.active', true);
 
-        $matchingTrips = [];
-        foreach ($trips as $trip) {
-            $polyline = $trip['polyline'];
+        $steps = $query->get()->getResultArray();
 
-            // Check if the start and end points are on the route
-            $startPoint = ['lat' => $startLat, 'lng' => $startLng];
-            $endPoint = ['lat' => $endLat, 'lng' => $endLng];
+        $tripMatches = [];
 
-            if ($this->isPointOnRoute($startPoint, $polyline) && $this->isPointOnRoute($endPoint, $polyline)) {
-                $matchingTrips[] = $trip;
+        foreach ($steps as $step) {
+            $points = $this->decodePolyline($step['polyline']);
+            if (empty($points)) continue;
+
+            $userPoint = ['lat' => $userLat, 'lng' => $userLng];
+            $distToUser = $this->pointToLineDistance($userPoint, $points);
+
+            if ($distToUser <= 200) {
+                $trip = $tripService->get(['tripId' => $step['tripId'], 'active' => true, 'status' => 'STARTED']);
+                $tripMatches[] = $trip;
             }
         }
 
+        $matchingTrips = array_unique($tripMatches);
         return $this->response->setJSON($matchingTrips);
-    }
-
-    private function isPointOnRoute($point, $polyline, $tolerance = 100)
-    {
-        $decodedPath = $this->decodePolyline($polyline);
-
-        foreach ($decodedPath as $pathPoint) {
-            $distance = $this->haversineDistance($point, $pathPoint);
-            if ($distance <= $tolerance) {
-                return true;
-            }
-        }
-
-        return false;
     }
 
     private function decodePolyline($polyline)
@@ -88,24 +79,60 @@ class Api extends BaseController {
         return $points;
     }
 
-    private function haversineDistance($point1, $point2)
+    private function haversineDistance($lat1, $lon1, $lat2, $lon2)
     {
-        $earthRadius = 6371000; // Raggio della Terra in metri
+        $earthRadius = 6371000; // in metri
 
-        $lat1 = deg2rad($point1['lat']);
-        $lng1 = deg2rad($point1['lng']);
-        $lat2 = deg2rad($point2['lat']);
-        $lng2 = deg2rad($point2['lng']);
-
-        $dLat = $lat2 - $lat1;
-        $dLng = $lng2 - $lng1;
+        $dLat = deg2rad($lat2 - $lat1);
+        $dLon = deg2rad($lon2 - $lon1);
+        $lat1 = deg2rad($lat1);
+        $lat2 = deg2rad($lat2);
 
         $a = sin($dLat / 2) * sin($dLat / 2) +
-             cos($lat1) * cos($lat2) *
-             sin($dLng / 2) * sin($dLng / 2);
-
+             sin($dLon / 2) * sin($dLon / 2) * cos($lat1) * cos($lat2);
         $c = 2 * atan2(sqrt($a), sqrt(1 - $a));
 
-        return $earthRadius * $c; // Distanza in metri
+        return $earthRadius * $c;
+    }
+
+    private function pointToLineDistance($point, $linePoints)
+    {
+        $minDistance = INF;
+        $count = count($linePoints);
+
+        for ($i = 0; $i < $count - 1; $i++) {
+            $a = $linePoints[$i];
+            $b = $linePoints[$i + 1];
+            $dist = $this->pointToSegmentDistance($point, $a, $b);
+            if ($dist < $minDistance) {
+                $minDistance = $dist;
+            }
+        }
+
+        return $minDistance;
+    }
+
+    private function pointToSegmentDistance($p, $a, $b)
+    {
+        $lat = deg2rad($p['lat']);
+        $lng = deg2rad($p['lng']);
+        $alat = deg2rad($a['lat']);
+        $alng = deg2rad($a['lng']);
+        $blat = deg2rad($b['lat']);
+        $blng = deg2rad($b['lng']);
+
+        $dx = $blng - $alng;
+        $dy = $blat - $alat;
+
+        if ($dx == 0 && $dy == 0) {
+            return $this->haversineDistance($p['lat'], $p['lng'], $a['lat'], $a['lng']);
+        }
+
+        $t = ((($lng - $alng) * $dx + ($lat - $alat) * $dy) / ($dx * $dx + $dy * $dy));
+        $t = max(0, min(1, $t));
+        $projLat = rad2deg($alat + $t * $dy);
+        $projLng = rad2deg($alng + $t * $dx);
+
+        return $this->haversineDistance($p['lat'], $p['lng'], $projLat, $projLng);
     }
 }

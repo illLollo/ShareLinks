@@ -14,10 +14,4 @@ class AccessesService extends Model
     {
         return $this->where($filters)->countAllResults();
     }
-
-    public function get(array $filters = []): ?object
-    {
-        $result = $this->where($filters)->first();
-        return $result ? (object) $result : null;
-    }
 }

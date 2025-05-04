@@ -14,8 +14,10 @@ class Login extends BaseController
 {
     public function index()
     {
-        if (session()->has("userId")) {
-            return redirect()->to('/homepage/'); // Redirect if already logged in
+        $user = AuthHelper::getAuthenticatedUser(false);
+
+        if ($user) {
+            redirect()->to("/homepage/");
         }
 
         echo view("basicNav");
@@ -48,8 +50,8 @@ class Login extends BaseController
                 model(AccessesService::class)->insert([
                     'userId' => $user->userId,
                     'token' => $token,
-                    'createdAt' => (new DateTime())->format('Y-m-d H:i:s'),
-                    'expiresAt' => (new DateTime())->modify("+" . ApplicationConstants::$TOKEN_EXPIRY_SECONDS . " seconds")->format('Y-m-d H:i:s'),
+                    'loginDate' => (new DateTime())->format('Y-m-d H:i:s'),
+                    'expiryDate' => (new DateTime())->modify("+" . ApplicationConstants::$TOKEN_EXPIRY_SECONDS . " seconds")->format('Y-m-d H:i:s'),
                     'active' => true
                 ]);
 

@@ -94,6 +94,7 @@
                     <?php if ($driver): ?>
                         <li><a class="dropdown-item" href="<?= base_url('/driver') ?>">Il tuo profilo da Guidatore</a></li>
                         <li><a class="dropdown-item" href="<?= base_url('/cars') ?>">Le tue auto</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url('/drive') ?>">Sali in macchina</a></li>
                     <?php else: ?>
                         <li><a class="dropdown-item" href="<?= base_url('/driver/registerDriverLicense') ?>">Crea il tuo profilo da
                                 guidatore</a></li>

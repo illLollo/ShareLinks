@@ -161,80 +161,6 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <!-- Search Card -->
-                    <div class="card search-card mb-4">
-                        <div class="card-body p-4">
-                            <h4 class="card-title mb-4">Richiedi un passaggio</h4>
-
-                            <form id="rideRequestForm">
-                                <!-- Route Selection -->
-                                <div class="mb-4">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div class="route-icon me-3">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <label for="departure" class="form-label">Partenza</label>
-                                            <input type="text" class="form-control" id="departure" placeholder="Inserisci indirizzo di partenza" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <div class="route-icon me-3">
-                                            <i class="fas fa-flag-checkered"></i>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <label for="destination" class="form-label">Destinazione</label>
-                                            <input type="text" class="form-control" id="destination" placeholder="Inserisci indirizzo di destinazione" required>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Date and Time -->
-                                <!-- <div class="row mb-4">
-                                    <div class="col-md-6 mb-3 mb-md-0">
-                                        <label for="rideDate" class="form-label">Data</label>
-                                        <input type="date" class="form-control" id="rideDate" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="rideTime" class="form-label">Orario</label>
-                                        <input type="time" class="form-control" id="rideTime" required>
-                                    </div>
-                                </div> -->
-
-                                <!-- Passengers -->
-                                <div class="mb-4">
-                                    <label for="passengers" class="form-label">Numero di passeggeri</label>
-                                    <select class="form-select" id="passengers">
-                                        <option value="1">1 passeggero</option>
-                                        <option value="2">2 passeggeri</option>
-                                        <option value="3">3 passeggeri</option>
-                                        <option value="4">4 passeggeri</option>
-                                    </select>
-                                </div>
-
-                                <!-- Preferences -->
-                                <!-- <div class="mb-4">
-                                    <label class="form-label">Preferenze</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="smokingAllowed">
-                                        <label class="form-check-label" for="smokingAllowed">Fumatore</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="petFriendly">
-                                        <label class="form-check-label" for="petFriendly">Viaggio con animali</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="luggage">
-                                        <label class="form-check-label" for="luggage">Bagaglio voluminoso</label>
-                                    </div>
-                                </div> -->
-
-                                <button type="submit" class="btn btn-primary w-100 py-2">
-                                    <i class="fas fa-search me-2"></i>Cerca viaggi disponibili
-                                </button>
-                            </form>
-                        </div>
-                    </div>
 
                     <!-- Available Rides (Example) -->
                     <h5 class="mb-3">Viaggi disponibili</h5>
@@ -453,7 +379,7 @@
         });
 
         navigator.geolocation.getCurrentPosition(
-            (position) => {
+            async (position) => {
                 const userPosition = {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude,
@@ -469,6 +395,23 @@
                     map: map,
                     title: "La tua posizione precisa",
                 });
+
+
+                const response = await fetch("/api/getTripsNearUser", {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        lat: userPosition.lat,
+                        lng: userPosition.lng,
+                    }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Errore nella richiesta al server.');
+                }
+
+                const trips = await response.json();
+
+                console.log(trips);
             },
             (error) => {
                 console.error("Errore nel recupero della posizione:", error);
@@ -488,126 +431,96 @@
         sidebar.classList.toggle('hidden');
     }
 
-    document.getElementById("rideRequestForm").addEventListener("submit", async (event) => {
-        event.preventDefault(); // Prevent the default form submission
+    // async function load() {
 
-        if (!departureMarker || !destinationMarker) {
-            alert("Per favore, seleziona sia la partenza che la destinazione sulla mappa.");
-            return;
-        }
+    //     if (!departureMarker || !destinationMarker) {
+    //         alert("Per favore, seleziona sia la partenza che la destinazione sulla mappa.");
+    //         return;
+    //     }
 
-        const departureCoords = {
-            lat: departureMarker.getPosition().lat(),
-            lng: departureMarker.getPosition().lng(),
-        };
+    //     const departureCoords = {
+    //         lat: departureMarker.getPosition().lat(),
+    //         lng: departureMarker.getPosition().lng(),
+    //     };
 
-        const destinationCoords = {
-            lat: destinationMarker.getPosition().lat(),
-            lng: destinationMarker.getPosition().lng(),
-        };
+    //     const destinationCoords = {
+    //         lat: destinationMarker.getPosition().lat(),
+    //         lng: destinationMarker.getPosition().lng(),
+    //     };
 
-        try {
-            const directionsService = new google.maps.DirectionsService();
+    //     try {
+    //         const directionsService = new google.maps.DirectionsService();
 
-            // Request directions from Google Maps API
-            const result = await directionsService.route({
-                origin: departureCoords,
-                destination: destinationCoords,
-                travelMode: google.maps.TravelMode.DRIVING, // You can change this to WALKING, BICYCLING, or TRANSIT
-                provideRouteAlternatives: true, // Request multiple route options
-            });
+    //         // Request directions from Google Maps API
+    //         const result = await directionsService.route({
+    //             origin: departureCoords,
+    //             destination: destinationCoords,
+    //             travelMode: google.maps.TravelMode.DRIVING, // You can change this to WALKING, BICYCLING, or TRANSIT
+    //             provideRouteAlternatives: true, // Request multiple route options
+    //         });
 
-            console.log("Dettagli delle opzioni di percorso:", result.routes);
+    //         console.log("Dettagli delle opzioni di percorso:", result.routes);
 
-            // Log the minimal data needed to reconstruct the route
-            result.routes.forEach((route, index) => {
-                const minimalData = {
-                    start_location: route.legs[0].start_location, // Starting point
-                    end_location: route.legs[0].end_location, // Ending point
-                    polyline: route.overview_polyline, // Compressed polyline
-                };
+    //         // Log the minimal data needed to reconstruct the route
+    //         result.routes.forEach((route, index) => {
+    //             const minimalData = {
+    //                 start_location: {
+    //                     lat: route.legs[0].start_location.lat(),
+    //                     lng: route.legs[0].start_location.lng()
+    //                 }, // Starting point
+    //                 end_location: {
+    //                     lat: route.legs[0].end_location.lat(),
+    //                     lng: route.legs[0].end_location.lng()
+    //                 }, // Ending point
+    //                 polyline: route.overview_polyline, // Compressed polyline
+    //             };
 
-                console.log(`Percorso ${index + 1}:`);
-                console.log("Dati minimi per ricostruire il percorso:", minimalData);
-            });
-        } catch (error) {
-            console.error("Errore durante la ricerca dei percorsi:", error);
-            alert("Si è verificato un errore durante la ricerca dei percorsi. Riprova più tardi.");
-        }
-    });
+    //             console.log(`Percorso ${index + 1}:`);
+    //             console.log("Dati minimi per ricostruire il percorso:", minimalData);
+    //         });
+    //     } catch (error) {
+    //         console.error("Errore durante la ricerca dei percorsi:", error);
+    //         alert("Si è verificato un errore durante la ricerca dei percorsi. Riprova più tardi.");
+    //     }
+    // }
 
-    document.getElementById('rideRequestForm').addEventListener('submit', async function(event) {
-        event.preventDefault();
 
-        const departureInput = document.getElementById('departure');
-        const destinationInput = document.getElementById('destination');
+    // document.getElementById('rideRequestForm').addEventListener('submit', async function(event) {
 
-        const startLat = departureMarker ? departureMarker.getPosition().lat() : null;
-        const startLng = departureMarker ? departureMarker.getPosition().lng() : null;
-        const endLat = destinationMarker ? destinationMarker.getPosition().lat() : null;
-        const endLng = destinationMarker ? destinationMarker.getPosition().lng() : null;
+    //     try {
 
-        if (!startLat || !startLng || !endLat || !endLng) {
-            alert('Per favore, seleziona sia la partenza che la destinazione sulla mappa.');
-            return;
-        }
 
-        console.log('Coordinate di partenza:', { lat: startLat, lng: startLng });
-        console.log('Coordinate di arrivo:', { lat: endLat, lng: endLng });
+    //         // Clear previous results
+    //         const resultsContainer = document.getElementById('resultsContainer');
+    //         resultsContainer.innerHTML = '';
 
-        try {
-            const response = await fetch('<?php base_url("/api/getTripsOnRoute") ?>', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    startLat: startLat,
-                    startLng: startLng,
-                    endLat: endLat,
-                    endLng: endLng,
-                }),
-            });
+    //         // Add trips to the map and results container
+    //         trips.forEach(trip => {
+    //             // Add markers for each step of the trip
+    //             trip.steps.forEach(step => {
+    //                 const marker = new google.maps.Marker({
+    //                     position: { lat: step.latitude, lng: step.longitude },
+    //                     map: map,
+    //                     title: `Step ${step.ordinal}`,
+    //                 });
+    //             });
 
-            if (!response.ok) {
-                throw new Error('Errore nella richiesta al server.');
-            }
-
-            const trips = await response.json();
-
-            console.log(trips);
-
-            // Clear previous results
-            const resultsContainer = document.getElementById('resultsContainer');
-            resultsContainer.innerHTML = '';
-
-            // Add trips to the map and results container
-            trips.forEach(trip => {
-                // Add markers for each step of the trip
-                trip.steps.forEach(step => {
-                    const marker = new google.maps.Marker({
-                        position: { lat: step.latitude, lng: step.longitude },
-                        map: map,
-                        title: `Step ${step.ordinal}`,
-                    });
-                });
-
-                // Add trip details to the results container
-                const tripElement = document.createElement('div');
-                tripElement.classList.add('trip-result');
-                tripElement.innerHTML = `
-                    <h5>Viaggio ID: ${trip.tripId}</h5>
-                    <p><strong>Partenza:</strong> ${trip.startTime}</p>
-                    <p><strong>Arrivo stimato:</strong> ${trip.estimatedEndTime}</p>
-                    <p><strong>Stato:</strong> ${trip.status}</p>
-                `;
-                resultsContainer.appendChild(tripElement);
-            });
-        } catch (error) {
-            console.error('Errore durante la ricerca dei viaggi:', error);
-            alert('Si è verificato un errore durante la ricerca dei viaggi. Riprova più tardi.');
-        }
-    });
+    //             // Add trip details to the results container
+    //             const tripElement = document.createElement('div');
+    //             tripElement.classList.add('trip-result');
+    //             tripElement.innerHTML = `
+    //                 <h5>Viaggio ID: ${trip.tripId}</h5>
+    //                 <p><strong>Partenza:</strong> ${trip.startTime}</p>
+    //                 <p><strong>Arrivo stimato:</strong> ${trip.estimatedEndTime}</p>
+    //                 <p><strong>Stato:</strong> ${trip.status}</p>
+    //             `;
+    //             resultsContainer.appendChild(tripElement);
+    //         });
+    //     } catch (error) {
+    //         console.error('Errore durante la ricerca dei viaggi:', error);
+    //         alert('Si è verificato un errore durante la ricerca dei viaggi. Riprova più tardi.');
+    //     }
+    // });
 </script>
 <script src="<?= base_url('/Script/observer.js'); ?>"></script>
 </html>

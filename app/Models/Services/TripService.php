@@ -15,12 +15,12 @@ class TripService
         $db = \Config\Database::connect();
 
         // Query to fetch trip details
-        $tripQuery = $db->table('t_trip');
+        $tripQuery = $db->table('v_trip_remaining_slots t');
 
         $fields = $this->filterTripFields($filters);
 
         foreach ($fields as $field => $value) {
-            $tripQuery = $tripQuery->where("t_trip.$field", $value);
+            $tripQuery = $tripQuery->where("t.$field", $value);
         }
 
         $trip = $tripQuery->get()->getRowArray();
@@ -36,10 +36,17 @@ class TripService
         ->orderBy('t_step.ordinal', 'ASC')
         ->get();
 
+        $driver = model(DriverService::class)->get(['driverId' => $trip['driverId'], 'active' => true]);
+        $car = model(CarService::class)->get(['carId' => $trip['carId'], 'active' => true]);
         $steps = $stepsQuery->getResultArray();
 
         // Combine trip and steps data
+        unset($trip['carId']);
+        unset($trip['driverId']);
+
         $trip['steps'] = $steps;
+        $trip['driver'] = model(UserService::class)->get(['userId' => $driver->userId, 'active' => true]);
+        $trip['car'] = $car;
 
         return $trip;
     }
@@ -62,8 +69,8 @@ class TripService
     public function table(): BaseBuilder
     {
         $db = \Config\Database::connect();
-        return $db->table('t_trip')
-            ->join('t_step', 't_step.tripId = t_trip.tripId');
+        return $db->table('t_trip t')
+            ->join('t_step', 't_step.tripId = t.tripId');
     }
 
     public function insert(array $row): bool
@@ -130,14 +137,15 @@ class TripService
     }
     private function filterTripFields(array $input): array
     {
-        return array_filter($input, function($item) {
-            return in_array($item, $this->stepAllowedFields);
-        });
+        return array_filter($input, function($key) {
+            return in_array($key, $this->tripAllowedFields);
+        }, ARRAY_FILTER_USE_KEY);
     }
+
     private function filterStepFields(array $input): array
     {
-        return array_filter($input, function($item) {
-            return in_array($item, $this->stepAllowedFields);
-        });
+        return array_filter($input, function($key) {
+            return in_array($key, $this->stepAllowedFields);
+        }, ARRAY_FILTER_USE_KEY);
     }
 }

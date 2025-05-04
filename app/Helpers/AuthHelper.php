@@ -14,14 +14,12 @@ class AuthHelper
      */
     public static function getAuthenticatedUser($redirect = true): ?object
     {
-        try {
-            return ApplicationUtilities::verifyAuth();
-        } catch (\CodeIgniter\Exceptions\PageNotFoundException $e) {
-            if ($redirect) {
-                return redirect()->to('/login')->send();
+            $auth = ApplicationUtilities::verifyAuth() ?? null;
+            if (!$auth && $redirect) {
+                redirect()->to('/login')->send();
+                exit;
             }
-        }
-        return null;
+            return $auth;
     }
     public static function getAuthenticatedDriver($user = null, $redirect = true): ?object
     {

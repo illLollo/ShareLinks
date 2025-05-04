@@ -7,6 +7,7 @@ use App\Models\Services\DriverService;
 use App\Models\Services\UserService;
 use CodeIgniter\Database\Exceptions\DatabaseException;
 use CodeIgniter\Exceptions\PageNotFoundException;
+use CodeIgniter\HTTP\RedirectResponse;
 
 class ApplicationUtilities
 {
@@ -22,14 +23,37 @@ class ApplicationUtilities
         $session = session();
 
         if ($session->has("userId")) {
-            return model(UserService::class)->get(['userId' => $session->get("userId"), 'active' => true]);
+            $access = model(AccessesService::class)->select("t_accesses.*")->where([
+                'userId' => $session->get("userId"),
+                'active' => true,
+                'expiryDate >' => date("Y-m-d H:i:s")
+            ])->orderBy("loginDate", "DESC")->first();
+
+            if ($access) {
+                $user = model(UserService::class)->get([
+                    'userId' => $session->get("userId"),
+                    'active' => true
+                ]);
+
+                if ($user) {
+                    $user->token = $access["token"];
+                    return $user;
+                }
+            }
         }
-        throw PageNotFoundException::forPageNotFound();
+
+        return null;
     }
+
     public static function verifyDriver($userArg = null): ?object{
 
         try {
             $user = $userArg ?? self::verifyAuth();
+
+            if (!$user) {
+                throw PageNotFoundException::forPageNotFound();
+            }
+
             $driver = model(DriverService::class)->get(["userId" => $user->userId, "active" => true]);
 
             if ($driver) {

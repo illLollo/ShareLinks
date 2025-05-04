@@ -3,9 +3,8 @@
 namespace App\Controllers;
 
 use App\Helpers\AuthHelper;
-use App\Models\ApplicationUtilities;
 
-class Homepage extends BaseController
+class Drive extends BaseController
 {
     public function index(): string
     {
@@ -13,7 +12,11 @@ class Homepage extends BaseController
         $driver = AuthHelper::getAuthenticatedDriver($user, false);
 
         echo view("header", ['user' => $user, 'driver' => $driver]);
-        return view("homepage", ['user' => $user, 'driver' => $driver]);
+        return view("drive", ['user' => $user, 'driver' => $driver]);
+    }
+    public function selectCar() {
+        $user = AuthHelper::getAuthenticatedUser();
+        $driver = AuthHelper::getAuthenticatedDriver($user, false);
     }
 
 }
