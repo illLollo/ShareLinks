@@ -29,7 +29,6 @@ class TripService
             return []; // Trip not found
         }
 
-        // Query to fetch steps associated with the trip
         $stepsQuery = $db->table('t_step')
         ->select('t_step.stepId, t_step.latitude, t_step.longitude, t_step.polyline, t_step.ordinal')
         ->where('t_step.tripId', $trip['tripId'])

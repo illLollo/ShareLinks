@@ -6,6 +6,7 @@ use App\Models\Services\AccessesService;
 use App\Models\Services\DriverService;
 use App\Models\Services\UserService;
 use CodeIgniter\Database\Exceptions\DatabaseException;
+use CodeIgniter\Exceptions\PageNotFoundException;
 
 class ApplicationUtilities
 {
@@ -23,18 +24,20 @@ class ApplicationUtilities
         if ($session->has("userId")) {
             return model(UserService::class)->get(['userId' => $session->get("userId"), 'active' => true]);
         }
-        throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        throw PageNotFoundException::forPageNotFound();
     }
     public static function verifyDriver($userArg = null): ?object{
 
-        $user = $userArg ?? self::verifyAuth();
+        try {
+            $user = $userArg ?? self::verifyAuth();
+            $driver = model(DriverService::class)->get(["userId" => $user->userId, "active" => true]);
 
-        $driver = model(DriverService::class)->get(["userId" => $user->userId, "active" => true]);
+            if ($driver) {
+                return $driver;
+            }
+        } catch (PageNotFoundException $e) {}
 
-        if ($driver) {
-            return $driver;
-        }
-        throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        throw PageNotFoundException::forPageNotFound();
     }
 
     public static function authenticate(?object $user, string $view)

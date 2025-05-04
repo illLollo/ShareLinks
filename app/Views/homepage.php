@@ -342,6 +342,11 @@
         <div id="map"></div>
     </div>
 </div>
+
+<div id="resultsContainer" class="mt-4">
+    <!-- Risultati dei viaggi disponibili verranno mostrati qui -->
+</div>
+
 </body>
 
 <script>
@@ -528,6 +533,79 @@
         } catch (error) {
             console.error("Errore durante la ricerca dei percorsi:", error);
             alert("Si è verificato un errore durante la ricerca dei percorsi. Riprova più tardi.");
+        }
+    });
+
+    document.getElementById('rideRequestForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const departureInput = document.getElementById('departure');
+        const destinationInput = document.getElementById('destination');
+
+        const startLat = departureMarker ? departureMarker.getPosition().lat() : null;
+        const startLng = departureMarker ? departureMarker.getPosition().lng() : null;
+        const endLat = destinationMarker ? destinationMarker.getPosition().lat() : null;
+        const endLng = destinationMarker ? destinationMarker.getPosition().lng() : null;
+
+        if (!startLat || !startLng || !endLat || !endLng) {
+            alert('Per favore, seleziona sia la partenza che la destinazione sulla mappa.');
+            return;
+        }
+
+        console.log('Coordinate di partenza:', { lat: startLat, lng: startLng });
+        console.log('Coordinate di arrivo:', { lat: endLat, lng: endLng });
+
+        try {
+            const response = await fetch('<?php base_url("/api/getTripsOnRoute") ?>', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    startLat: startLat,
+                    startLng: startLng,
+                    endLat: endLat,
+                    endLng: endLng,
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error('Errore nella richiesta al server.');
+            }
+
+            const trips = await response.json();
+
+            console.log(trips);
+
+            // Clear previous results
+            const resultsContainer = document.getElementById('resultsContainer');
+            resultsContainer.innerHTML = '';
+
+            // Add trips to the map and results container
+            trips.forEach(trip => {
+                // Add markers for each step of the trip
+                trip.steps.forEach(step => {
+                    const marker = new google.maps.Marker({
+                        position: { lat: step.latitude, lng: step.longitude },
+                        map: map,
+                        title: `Step ${step.ordinal}`,
+                    });
+                });
+
+                // Add trip details to the results container
+                const tripElement = document.createElement('div');
+                tripElement.classList.add('trip-result');
+                tripElement.innerHTML = `
+                    <h5>Viaggio ID: ${trip.tripId}</h5>
+                    <p><strong>Partenza:</strong> ${trip.startTime}</p>
+                    <p><strong>Arrivo stimato:</strong> ${trip.estimatedEndTime}</p>
+                    <p><strong>Stato:</strong> ${trip.status}</p>
+                `;
+                resultsContainer.appendChild(tripElement);
+            });
+        } catch (error) {
+            console.error('Errore durante la ricerca dei viaggi:', error);
+            alert('Si è verificato un errore durante la ricerca dei viaggi. Riprova più tardi.');
         }
     });
 </script>

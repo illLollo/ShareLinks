@@ -1,0 +1,88 @@
+DEBUG - 2025-05-03 21:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 21:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 21:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-03 21:43:41 --> ErrorException: Undefined property: CodeIgniter\HTTP\RedirectResponse::$userId
+[Method: GET, Route: homepage]
+in APPPATH\Models\ApplicationUtilities.php on line 32.
+ 1 APPPATH\Models\ApplicationUtilities.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$userId', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Models\\ApplicationUtilities.php', 32)
+ 2 APPPATH\Helpers\AuthHelper.php(29): App\Models\ApplicationUtilities::verifyDriver(Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 APPPATH\Controllers\Homepage.php(13): App\Helpers\AuthHelper::getAuthenticatedDriver(Object(CodeIgniter\HTTP\RedirectResponse), false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Homepage->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-03 22:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-03 22:03:52 --> ErrorException: Undefined property: CodeIgniter\HTTP\RedirectResponse::$userId
+[Method: GET, Route: homepage]
+in APPPATH\Models\ApplicationUtilities.php on line 32.
+ 1 APPPATH\Models\ApplicationUtilities.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$userId', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Models\\ApplicationUtilities.php', 32)
+ 2 APPPATH\Helpers\AuthHelper.php(29): App\Models\ApplicationUtilities::verifyDriver(Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 APPPATH\Controllers\Homepage.php(13): App\Helpers\AuthHelper::getAuthenticatedDriver(Object(CodeIgniter\HTTP\RedirectResponse), false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Homepage->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-03 22:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-03 22:03:55 --> ErrorException: Undefined property: CodeIgniter\HTTP\RedirectResponse::$userId
+[Method: GET, Route: homepage]
+in APPPATH\Models\ApplicationUtilities.php on line 32.
+ 1 APPPATH\Models\ApplicationUtilities.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$userId', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Models\\ApplicationUtilities.php', 32)
+ 2 APPPATH\Helpers\AuthHelper.php(29): App\Models\ApplicationUtilities::verifyDriver(Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 APPPATH\Controllers\Homepage.php(13): App\Helpers\AuthHelper::getAuthenticatedDriver(Object(CodeIgniter\HTTP\RedirectResponse), false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Homepage->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-03 22:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-03 22:06:18 --> ErrorException: Undefined property: CodeIgniter\HTTP\RedirectResponse::$userId
+[Method: GET, Route: homepage]
+in APPPATH\Models\ApplicationUtilities.php on line 33.
+ 1 APPPATH\Models\ApplicationUtilities.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$userId', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Models\\ApplicationUtilities.php', 33)
+ 2 APPPATH\Helpers\AuthHelper.php(29): App\Models\ApplicationUtilities::verifyDriver(Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 APPPATH\Controllers\Homepage.php(13): App\Helpers\AuthHelper::getAuthenticatedDriver(Object(CodeIgniter\HTTP\RedirectResponse), false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Homepage->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-03 22:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-03 22:06:20 --> ErrorException: Undefined property: CodeIgniter\HTTP\RedirectResponse::$userId
+[Method: GET, Route: homepage]
+in APPPATH\Models\ApplicationUtilities.php on line 33.
+ 1 APPPATH\Models\ApplicationUtilities.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$userId', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Models\\ApplicationUtilities.php', 33)
+ 2 APPPATH\Helpers\AuthHelper.php(29): App\Models\ApplicationUtilities::verifyDriver(Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 APPPATH\Controllers\Homepage.php(13): App\Helpers\AuthHelper::getAuthenticatedDriver(Object(CodeIgniter\HTTP\RedirectResponse), false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Homepage->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-03 22:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 22:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 23:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 23:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 23:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

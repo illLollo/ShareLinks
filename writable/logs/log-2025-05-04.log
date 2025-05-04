@@ -1,0 +1,1667 @@
+DEBUG - 2025-05-04 09:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-04 09:35:34 --> ErrorException: Undefined property: CodeIgniter\HTTP\RedirectResponse::$userId
+[Method: GET, Route: homepage]
+in APPPATH\Models\ApplicationUtilities.php on line 33.
+ 1 APPPATH\Models\ApplicationUtilities.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$userId', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Models\\ApplicationUtilities.php', 33)
+ 2 APPPATH\Helpers\AuthHelper.php(29): App\Models\ApplicationUtilities::verifyDriver(Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 APPPATH\Controllers\Homepage.php(13): App\Helpers\AuthHelper::getAuthenticatedDriver(Object(CodeIgniter\HTTP\RedirectResponse), false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Homepage->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 09:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-04 09:35:37 --> ErrorException: Undefined property: CodeIgniter\HTTP\RedirectResponse::$userId
+[Method: GET, Route: homepage]
+in APPPATH\Models\ApplicationUtilities.php on line 33.
+ 1 APPPATH\Models\ApplicationUtilities.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$userId', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Models\\ApplicationUtilities.php', 33)
+ 2 APPPATH\Helpers\AuthHelper.php(29): App\Models\ApplicationUtilities::verifyDriver(Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 APPPATH\Controllers\Homepage.php(13): App\Helpers\AuthHelper::getAuthenticatedDriver(Object(CodeIgniter\HTTP\RedirectResponse), false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Homepage->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 09:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-04 09:35:46 --> ErrorException: Undefined property: CodeIgniter\HTTP\RedirectResponse::$userId
+[Method: GET, Route: homepage]
+in APPPATH\Models\ApplicationUtilities.php on line 33.
+ 1 APPPATH\Models\ApplicationUtilities.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$userId', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Models\\ApplicationUtilities.php', 33)
+ 2 APPPATH\Helpers\AuthHelper.php(29): App\Models\ApplicationUtilities::verifyDriver(Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 APPPATH\Controllers\Homepage.php(13): App\Helpers\AuthHelper::getAuthenticatedDriver(Object(CodeIgniter\HTTP\RedirectResponse), false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Homepage->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 09:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-04 09:36:17 --> ErrorException: Undefined property: CodeIgniter\HTTP\RedirectResponse::$userId
+[Method: GET, Route: homepage]
+in APPPATH\Models\ApplicationUtilities.php on line 33.
+ 1 APPPATH\Models\ApplicationUtilities.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$userId', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Models\\ApplicationUtilities.php', 33)
+ 2 APPPATH\Helpers\AuthHelper.php(29): App\Models\ApplicationUtilities::verifyDriver(Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 APPPATH\Controllers\Homepage.php(13): App\Helpers\AuthHelper::getAuthenticatedDriver(Object(CodeIgniter\HTTP\RedirectResponse), false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Homepage->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 09:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-04 09:36:33 --> ErrorException: Undefined property: CodeIgniter\HTTP\RedirectResponse::$userId
+[Method: GET, Route: homepage]
+in APPPATH\Models\ApplicationUtilities.php on line 33.
+ 1 APPPATH\Models\ApplicationUtilities.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$userId', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Models\\ApplicationUtilities.php', 33)
+ 2 APPPATH\Helpers\AuthHelper.php(29): App\Models\ApplicationUtilities::verifyDriver(Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 APPPATH\Controllers\Homepage.php(13): App\Helpers\AuthHelper::getAuthenticatedDriver(Object(CodeIgniter\HTTP\RedirectResponse), false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Homepage->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 09:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-04 09:53:20 --> ErrorException: Undefined array key "startLat"
+[Method: POST, Route: api/getTripsOnRoute]
+in APPPATH\Controllers\Api.php on line 14.
+ 1 APPPATH\Controllers\Api.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "startLat"', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Controllers\\Api.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 09:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 09:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 10:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 10:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-04 10:12:00 --> ErrorException: Undefined array key "steps"
+[Method: POST, Route: api/getTripsOnRoute]
+in APPPATH\Controllers\Api.php on line 49.
+ 1 APPPATH\Controllers\Api.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "steps"', 'C:\\Users\\loren\\Downloads\\UniServerZ\\www\\ci4\\app\\Controllers\\Api.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 10:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 10:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 10:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 10:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 10:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 10:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-04 10:20:51 --> mysqli_sql_exception: Not unique table/alias: 't_step' in C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `trips`....', 0)
+#1 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `trips`....')
+#2 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `trips`....')
+#3 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `trips`....', Array, false)
+#4 C:\Users\loren\Downloads\UniServerZ\www\ci4\app\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+#6 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\loren\Downloads\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-04 10:20:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+[Method: POST, Route: api/getTripsOnRoute]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `trips`.`id`', [...], false)
+ 2 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:20:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `trips`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `trips`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `trips`.`id`', [...], false)
+ 4 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:20:51 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `trips`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `trips`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `trips`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `trips`.`id`', [...], false)
+ 5 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-04 10:20:53 --> mysqli_sql_exception: Not unique table/alias: 't_step' in C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `trips`....', 0)
+#1 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `trips`....')
+#2 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `trips`....')
+#3 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `trips`....', Array, false)
+#4 C:\Users\loren\Downloads\UniServerZ\www\ci4\app\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+#6 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\loren\Downloads\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-04 10:20:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+[Method: POST, Route: api/getTripsOnRoute]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `trips`.`id`', [...], false)
+ 2 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:20:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `trips`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `trips`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `trips`.`id`', [...], false)
+ 4 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:20:53 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `trips`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `trips`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `trips`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `trips`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `trip_steps` as `t_step` ON `t_step`.`trip_id` = `trips`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `trips`.`id`', [...], false)
+ 5 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-04 10:21:29 --> mysqli_sql_exception: Not unique table/alias: 't_step' in C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`...', 0)
+#1 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`...')
+#2 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`...')
+#3 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`...', Array, false)
+#4 C:\Users\loren\Downloads\UniServerZ\www\ci4\app\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+#6 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\loren\Downloads\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-04 10:21:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+[Method: POST, Route: api/getTripsOnRoute]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 2 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:21:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `t_trip`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 4 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:21:29 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `t_trip`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `t_trip`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 5 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-04 10:21:30 --> mysqli_sql_exception: Not unique table/alias: 't_step' in C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`...', 0)
+#1 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`...')
+#2 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`...')
+#3 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`...', Array, false)
+#4 C:\Users\loren\Downloads\UniServerZ\www\ci4\app\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+#6 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\loren\Downloads\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-04 10:21:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+[Method: POST, Route: api/getTripsOnRoute]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 2 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:21:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `t_trip`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 4 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:21:30 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `t_trip`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+OR   (
+`t_step`.`latitude` >= 45.4422056
+AND `t_step`.`latitude` <= 45.4622056
+AND `t_step`.`longitude` >= 12.0618441
+AND `t_step`.`longitude` <= 12.0818441
+ )
+GROUP BY `t_trip`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+OR   (
+`t_step`.`latitude` >= :t_step.latitude.2:
+AND `t_step`.`latitude` <= :t_step.latitude.3:
+AND `t_step`.`longitude` >= :t_step.longitude.2:
+AND `t_step`.`longitude` <= :t_step.longitude.3:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 5 APPPATH\Controllers\Api.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-04 10:22:15 --> mysqli_sql_exception: Not unique table/alias: 't_step' in C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`...', 0)
+#1 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`...')
+#2 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`...')
+#3 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`...', Array, false)
+#4 C:\Users\loren\Downloads\UniServerZ\www\ci4\app\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+#6 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\loren\Downloads\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-04 10:22:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+[Method: POST, Route: api/getTripsOnRoute]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 2 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:22:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 4 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:22:15 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 5 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-04 10:22:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1 in C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`...', 0)
+#1 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`...')
+#2 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`...')
+#3 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`...', Array, false)
+#4 C:\Users\loren\Downloads\UniServerZ\www\ci4\app\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+#6 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\loren\Downloads\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-04 10:22:52 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1
+[Method: POST, Route: api/getTripsOnRoute]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `s`.`trip_id` = `t`.`id`
+WHERE   (
+`s`.`latitude` >= :s.latitude:
+AND `s`.`latitude` <= :s.latitude.1:
+AND `s`.`longitude` >= :s.longitude:
+AND `s`.`longitude` <= :s.longitude.1:
+ )
+GROUP BY `t`.`id`', [...], false)
+ 2 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:22:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `s`.`trip_id` = `t`.`id`
+WHERE   (
+`s`.`latitude` >= 45.4602525
+AND `s`.`latitude` <= 45.4802525
+AND `s`.`longitude` >= 12.0715037
+AND `s`.`longitude` <= 12.0915037
+ )
+GROUP BY `t`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `s`.`trip_id` = `t`.`id`
+WHERE   (
+`s`.`latitude` >= 45.4602525
+AND `s`.`latitude` <= 45.4802525
+AND `s`.`longitude` >= 12.0715037
+AND `s`.`longitude` <= 12.0915037
+ )
+GROUP BY `t`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `s`.`trip_id` = `t`.`id`
+WHERE   (
+`s`.`latitude` >= :s.latitude:
+AND `s`.`latitude` <= :s.latitude.1:
+AND `s`.`longitude` >= :s.longitude:
+AND `s`.`longitude` <= :s.longitude.1:
+ )
+GROUP BY `t`.`id`', [...], false)
+ 4 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:22:52 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `s`.`trip_id` = `t`.`id`
+WHERE   (
+`s`.`latitude` >= 45.4602525
+AND `s`.`latitude` <= 45.4802525
+AND `s`.`longitude` >= 12.0715037
+AND `s`.`longitude` <= 12.0915037
+ )
+GROUP BY `t`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `s`.`trip_id` = `t`.`id`
+WHERE   (
+`s`.`latitude` >= 45.4602525
+AND `s`.`latitude` <= 45.4802525
+AND `s`.`longitude` >= 12.0715037
+AND `s`.`longitude` <= 12.0915037
+ )
+GROUP BY `t`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `s`.`trip_id` = `t`.`id`
+WHERE   (
+`s`.`latitude` >= 45.4602525
+AND `s`.`latitude` <= 45.4802525
+AND `s`.`longitude` >= 12.0715037
+AND `s`.`longitude` <= 12.0915037
+ )
+GROUP BY `t`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `s`.`trip_id` = `t`.`id`
+WHERE   (
+`s`.`latitude` >= :s.latitude:
+AND `s`.`latitude` <= :s.latitude.1:
+AND `s`.`longitude` >= :s.longitude:
+AND `s`.`longitude` <= :s.longitude.1:
+ )
+GROUP BY `t`.`id`', [...], false)
+ 5 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-04 10:22:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1 in C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`...', 0)
+#1 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`...')
+#2 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`...')
+#3 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`...', Array, false)
+#4 C:\Users\loren\Downloads\UniServerZ\www\ci4\app\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+#6 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\loren\Downloads\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-04 10:22:58 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1
+[Method: POST, Route: api/getTripsOnRoute]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 2 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:22:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 4 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:22:58 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 5 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-04 10:23:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1 in C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`...', 0)
+#1 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`...')
+#2 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`...')
+#3 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`...', Array, false)
+#4 C:\Users\loren\Downloads\UniServerZ\www\ci4\app\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+#6 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\loren\Downloads\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-04 10:23:04 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1
+[Method: POST, Route: api/getTripsOnRoute]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 2 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:23:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 4 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:23:04 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN ...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip` `t`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` `s` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 5 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-04 10:23:15 --> mysqli_sql_exception: Not unique table/alias: 't_step' in C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`...', 0)
+#1 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`...')
+#2 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`...')
+#3 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`...', Array, false)
+#4 C:\Users\loren\Downloads\UniServerZ\www\ci4\app\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+#6 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\loren\Downloads\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-04 10:23:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+[Method: POST, Route: api/getTripsOnRoute]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 2 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:23:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 4 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:23:15 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`trip_id` = `t_trip`.`id`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 5 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-04 10:23:42 --> mysqli_sql_exception: Not unique table/alias: 't_step' in C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`...', 0)
+#1 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`...')
+#2 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`...')
+#3 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`...', Array, false)
+#4 C:\Users\loren\Downloads\UniServerZ\www\ci4\app\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+#6 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\loren\Downloads\UniServerZ\www\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\loren\Downloads\UniServerZ\www\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-04 10:23:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+[Method: POST, Route: api/getTripsOnRoute]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 2 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:23:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 4 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-04 10:23:42 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 't_step'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+WHERE   (
+`t_step`.`latitude` >= 45.4602525
+AND `t_step`.`latitude` <= 45.4802525
+AND `t_step`.`longitude` >= 12.0715037
+AND `t_step`.`longitude` <= 12.0915037
+ )
+GROUP BY `t_trip`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t_trip`.*
+FROM `t_trip`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+JOIN `t_step` ON `t_step`.`tripId` = `t_trip`.`tripId`
+WHERE   (
+`t_step`.`latitude` >= :t_step.latitude:
+AND `t_step`.`latitude` <= :t_step.latitude.1:
+AND `t_step`.`longitude` >= :t_step.longitude:
+AND `t_step`.`longitude` <= :t_step.longitude.1:
+ )
+GROUP BY `t_trip`.`id`', [...], false)
+ 5 APPPATH\Controllers\Api.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 10:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-04 10:28:03 --> Error: Call to undefined method App\Models\Services\TripService::findAll()
+[Method: POST, Route: api/getTripsOnRoute]
+in APPPATH\Controllers\Api.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-04 10:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-04 10:29:05 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Api.php on line 59.
+ 1 APPPATH\Controllers\Api.php(59): strlen(null)
+ 2 APPPATH\Controllers\Api.php(43): App\Controllers\Api->decodePolyline(null)
+ 3 APPPATH\Controllers\Api.php(33): App\Controllers\Api->isPointOnRoute([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->getTripsOnRoute()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
