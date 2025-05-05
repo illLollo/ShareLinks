@@ -1,7 +1,11 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\Services\AccessesService;
+use App\Models\Services\CarService;
+use App\Models\Services\DriverService;
 use App\Models\Services\TripService;
+use App\Models\Services\UserService;
 
 class Api extends BaseController {
     public function getTripsNearUser()
@@ -10,6 +14,19 @@ class Api extends BaseController {
 
         $userLat = (float)$data["lat"];
         $userLng = (float)$data['lng'];
+        $token = $data['token'] ?? null;
+
+        $userId = model(AccessesService::class)
+            ->select("t_accesses.userId")
+            ->where(['token' => $token, 'active' => true, "expiryDate >" => date("Y-m-d H:i:s")])
+            ->orderBy("loginDate", "DESC")
+            ->first();
+
+        if (!$userId) {
+            return $this->response->setJSON([
+                'error' => 'Invalid token.'
+            ])->setStatusCode(401);
+        }
 
         if (!$userLat || !$userLng) {
             return $this->response->setJSON([
@@ -41,6 +58,34 @@ class Api extends BaseController {
 
         $matchingTrips = array_unique($tripMatches);
         return $this->response->setJSON($matchingTrips);
+    }
+    public function getCars() {
+        $data = json_decode(file_get_contents('php://input'), true);
+        $token = $data['token'] ?? null;
+
+        $userId = model(AccessesService::class)
+            ->select("t_accesses.userId")
+            ->where(['token' => $token, 'active' => true, "expiryDate >" => date("Y-m-d H:i:s")])
+            ->orderBy("loginDate", "DESC")
+            ->first();
+
+        if (!$userId) {
+            return $this->response->setJSON([
+                'error' => 'Invalid token.'
+            ])->setStatusCode(401);
+        }
+
+        $driver = model(DriverService::class)->get(['userId' => $userId, 'active' => true]);
+
+        if (!$driver) {
+            return $this->response->setJSON([
+                'error' => 'Driver not found.'
+            ])->setStatusCode(404);
+        }
+        $cars = model(CarService::class)->select('t_car.*')
+            ->where(['driverId' => $driver->driverId, 'active' => true])->findAll();
+
+        return $this->response->setJSON($cars);
     }
 
     private function decodePolyline($polyline)

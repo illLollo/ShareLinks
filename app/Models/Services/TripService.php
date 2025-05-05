@@ -3,11 +3,14 @@
 namespace App\Models\Services;
 
 use CodeIgniter\Database\BaseBuilder;
+use CodeIgniter\Database\Exceptions\DatabaseException;
+use CodeIgniter\Debug\Toolbar\Collectors\Database;
 use CodeIgniter\View\Table;
+use DateTime;
 
 class TripService
 {
-    public array $tripAllowedFields = ['tripId', 'carId', 'driverId', 'startTime', 'estimatedEndTime', 'actualEndTime', "status", "active"];
+    public array $tripAllowedFields = ['tripId', 'carId', 'driverId', 'startTime', 'estimatedEndTime', 'actualEndTime', "status", "active", "slots", "polyline", "time", "distance"];
     public array $stepAllowedFields = ['stepId', 'tripId', 'latitude', 'longitude', 'ordinal', 'active'];
 
     public function get(array $filters = []): array
@@ -80,6 +83,15 @@ class TripService
         $db->transBegin();
 
         $tripData = $this->filterTripFields($row);
+        $tripData["startTime"] = (new DateTime())->format('Y-m-d H:i:s');
+
+        $time = $tripData["time"];
+        $tripData["time"] = $tripData["time"] * 60;
+
+        $tripData["estimatedEndTime"] = (new DateTime())->modify("+{$time} minutes")->format('Y-m-d H:i:s');
+        $tripData["actualEndTime"] = null;
+        $tripData["status"] = "STARTED";
+        $tripData["active"] = true;
 
         $insertTrip = $db->table('t_trip')->insert($tripData);
 
@@ -89,7 +101,15 @@ class TripService
         }
 
 
-        $insertSteps = $db->table('t_step')->insertBatch($row['steps']);
+        $tripId = $db->insertID();
+
+        $steps = json_decode($row['steps']);
+
+        foreach ($steps as $s) {
+            $s->tripId = $tripId;
+        }
+
+        $insertSteps = $db->table('t_step')->insertBatch($steps);
 
         if (!$insertSteps) {
             $db->transRollback();
