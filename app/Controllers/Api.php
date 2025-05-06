@@ -5,13 +5,17 @@ use App\Models\Services\AccessesService;
 use App\Models\Services\CarService;
 use App\Models\Services\DriverService;
 use App\Models\Services\TripService;
-use App\Models\Services\UserService;
 
 class Api extends BaseController {
     public function getTripsNearUser()
     {
         $data = json_decode(file_get_contents('php://input'), true);
 
+        if (!isset($data['lat']) || !isset($data['lng'])) {
+            return $this->response->setJSON([
+                'error' => 'Invalid input. Please provide user coordinates.'
+            ])->setStatusCode(400);
+        }
         $userLat = (float)$data["lat"];
         $userLng = (float)$data['lng'];
         $token = $data['token'] ?? null;
@@ -37,27 +41,26 @@ class Api extends BaseController {
         $tripService = model(TripService::class);
 
         $query = $tripService->table()
-            ->select('t_step.*')->where('t_step.active', true);
+            ->distinct()->select('t.tripId, polyline')->where(['t.active' => true, "t.remainingSlots >" => 0]);
 
-        $steps = $query->get()->getResultArray();
+        $pairs = $query->get()->getResultArray();
 
         $tripMatches = [];
 
-        foreach ($steps as $step) {
-            $points = $this->decodePolyline($step['polyline']);
+        foreach ($pairs as $pair) {
+            $points = $this->decodePolyline($pair['polyline']);
             if (empty($points)) continue;
 
             $userPoint = ['lat' => $userLat, 'lng' => $userLng];
             $distToUser = $this->pointToLineDistance($userPoint, $points);
 
             if ($distToUser <= 200) {
-                $trip = $tripService->get(['tripId' => $step['tripId'], 'active' => true, 'status' => 'STARTED']);
+                $trip = $tripService->get(['tripId' => $pair['tripId'], 'active' => true, 'status' => 'STARTED', 'remainingSlots >' => 0]);
                 $tripMatches[] = $trip;
             }
         }
 
-        $matchingTrips = array_unique($tripMatches);
-        return $this->response->setJSON($matchingTrips);
+        return $this->response->setJSON($tripMatches);
     }
     public function getCars() {
         $data = json_decode(file_get_contents('php://input'), true);

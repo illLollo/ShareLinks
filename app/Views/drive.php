@@ -175,6 +175,7 @@
                 const intermediateCoords = {
                     lat: place.geometry.location.lat(),
                     lng: place.geometry.location.lng(),
+                    name: place.formatted_address // Save the start address for intermediate destinations
                 };
                 destinations.intermediate.push(intermediateCoords);
 
@@ -235,6 +236,7 @@
             destinations["final"] = {
                 lat: place.geometry.location.lat(),
                 lng: place.geometry.location.lng(),
+                name: place.formatted_address // Save the end address for the final destination
             };
 
             // Add a marker for the selected place
@@ -479,14 +481,16 @@
                                         waypoints.push({
                                             latitude: leg.start_location.lat(),
                                             longitude: leg.start_location.lng(),
-                                            ordinal: legIndex
+                                            ordinal: legIndex,
+                                            name: leg.start_address
                                         });
 
                                     if (legIndex === selectedRoute.legs.length - 1) {
                                         waypoints.push({
                                             latitude: leg.end_location.lat(),
                                             longitude: leg.end_location.lng(),
-                                            ordinal: legIndex + 1
+                                            ordinal: legIndex + 1,
+                                            name: leg.end_address
                                         });
                                     }
                                 });
@@ -498,7 +502,7 @@
 
                                 const form = document.createElement('form');
                                 form.method = 'POST';
-                                form.action = '/drive/driving';
+                                form.action = '/drive/registerTrip';
 
                                 const appendHiddenInput = (name, value) => {
                                     const input = document.createElement('input');
@@ -518,7 +522,6 @@
 
                                 document.body.appendChild(form);
 
-                                console.log(form);
                                 form.submit();
                             });
                         });

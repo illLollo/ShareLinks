@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOMEPAGE</title>
     <link rel="stylesheet" href="<?= base_url('/Style/global.css') ?>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
-<body style="position: relative; margin: 0 !important;">
+<body style="overflow-y: hidden; margin: 0 !important;">
     <style>
         :root {
             --primary-color: #2E8B57;
@@ -167,59 +168,13 @@
 
         }
     </style>
-    <?php if (session()->has('toastMessage')): ?>
-        <?= view('toast') ?>
-    <?php endif; ?>
+    <?= view('toast') ?>
     <div class="d-flex" style="height: 92vh; margin-top: 8vh;">
         <?= view("sidebar", ["direction" => "left"]); ?>
         <div class="sidebar-header">
-            <h class="mb-3">Viaggi disponibili</h2>
+            <h1 class="mb-3 fade-in">Viaggi disponibili</h1>
         </div>
         <div class="sidebar-content fade-in">
-            <div class="card p-3 mb-3">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                    <div class="d-flex align-items-center">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg"
-                            class="driver-avatar rounded-circle me-3">
-                        <div>
-                            <h6 class="mb-0">Laura Bianchi</h6>
-                            <small class="text-muted">4.9 ★ (12 recensioni)</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="route-details mb-3">
-                    <div class="d-flex align-items-center mb-2">
-                        <small class="text-muted me-3">08:30</small>
-                        <div class="flex-grow-1">
-                            <div class="d-flex align-items-center">
-                                <div class="route-icon me-2">
-                                    <i class="fas fa-circle" style="font-size: 0.6rem;"></i>
-                                </div>
-                                <span>Piazza del Duomo, Milano</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <div class="route-icon me-2">
-                                    <i class="fas fa-circle" style="font-size: 0.6rem;"></i>
-                                </div>
-                                <span>Stazione Centrale, Milano</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <span class="badge bg-light text-dark me-2">
-                            <i class="fas fa-car me-1"></i> BMW X1
-                        </span>
-                        <span class="badge bg-light text-dark">
-                            <i class="fas fa-user-friends me-1"></i> 2 posti disponibili
-                        </span>
-                    </div>
-                    <button class="btn btn-sm btn-outline-primary">Prenota</button>
-                </div>
-            </div>
         </div>
         <?= view("closeSidebar") ?>
     </div>
@@ -240,130 +195,211 @@
 </body>
 
 <script>
-    (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ",places"); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
-        key: "AIzaSyAZb0l2AiZau6rPCfhGmH7-9CaZFycIK4w",
-        v: "weekly",
-        // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
-        // Add other bootstrap parameters as needed, using camel case.
-    });
-    // Initialize and add the map
-    let map;
-
-    let departureInput = document.getElementById("departure");
-    let destinationInput = document.getElementById("destination");
-    let departureAutocomplete;
-    let destinationAutocomplete;
-    let departureMarker;
-    let destinationMarker;
-    let userMarker;
-
-    function initAutocomplete() {
-        // Initialize autocomplete for departure and destination inputs
-        departureAutocomplete = new google.maps.places.Autocomplete(departureInput);
-        destinationAutocomplete = new google.maps.places.Autocomplete(destinationInput);
-
-        // Add listeners for place selection
-        departureAutocomplete.addListener("place_changed", () => {
-            const place = departureAutocomplete.getPlace();
-            if (!place.geometry || !place.geometry.location) {
-                console.error("Place has no geometry");
-                return;
-            }
-
-            // Remove user marker if it exists
-            if (userMarker) {
-                userMarker.setMap(null);
-            }
-
-            // Remove previous departure marker
-            if (departureMarker) {
-                departureMarker.setMap(null);
-            }
-
-            // Add new marker for departure
-            departureMarker = new google.maps.Marker({
-                position: place.geometry.location,
-                map: map,
-                title: "Partenza",
-            });
-
-            // Center the map on the departure location
-            map.setCenter(place.geometry.location);
+    (async () => {
+        (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ",places"); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+            key: "AIzaSyAZb0l2AiZau6rPCfhGmH7-9CaZFycIK4w",
+            v: "weekly",
+            // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+            // Add other bootstrap parameters as needed, using camel case.
         });
-
-        destinationAutocomplete.addListener("place_changed", () => {
-            const place = destinationAutocomplete.getPlace();
-            if (!place.geometry || !place.geometry.location) {
-                console.error("Place has no geometry");
-                return;
-            }
-
-            // Remove user marker if it exists
-            if (userMarker) {
-                userMarker.setMap(null);
-            }
-
-            // Remove previous destination marker
-            if (destinationMarker) {
-                destinationMarker.setMap(null);
-            }
-
-            // Add new marker for destination
-            destinationMarker = new google.maps.Marker({
-                position: place.geometry.location,
-                map: map,
-                title: "Destinazione",
-            });
-
-            // Center the map on the destination location
-            map.setCenter(place.geometry.location);
-        });
-    }
-
-    async function initMap() {
-        // The location of Uluru
-        const position = { lat: -25.344, lng: 131.031 };
-        // Request needed libraries.
-        //@ts-ignore
         const { Map } = await google.maps.importLibrary("maps");
-        const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+        const { Polyline } = await google.maps.importLibrary("geometry");
 
-        // The map, centered at Uluru
-        map = new Map(document.getElementById("map"), {
-            zoom: 4,
-            center: position,
-            mapId: "DEMO_MAP_ID",
-        });
+        const userPosition = await (new Promise((resolve, reject) => {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    resolve({
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude,
+                    });
+                },
+                (error) => {
+                    console.error("Errore nel recupero della posizione:", error);
+                    alert("Impossibile ottenere la posizione attuale. Per favore, abilita la geolocalizzazione.");
+                    reject(error);
+                },
+                {
+                    enableHighAccuracy: true, // Request more precise location
+                }
+            );
+        }));
+        async function onBoard(trip, user, button) {
+            // Create a hidden form
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = '/homepage/registerOnBoard';
 
-        // The marker, positioned at Uluru
-        const marker = new AdvancedMarkerElement({
-            map: map,
-            position: position,
-            title: "Uluru",
-        });
+            // Add trip ID input
+            const tripInput = document.createElement('input');
+            tripInput.type = 'hidden';
+            tripInput.name = 'tripId';
+            tripInput.value = trip.tripId;
+            form.appendChild(tripInput);
 
-        navigator.geolocation.getCurrentPosition(
-            async (position) => {
-                const userPosition = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude,
-                };
+            // Add user ID input
+            const userInput = document.createElement('input');
+            userInput.type = 'hidden';
+            userInput.name = 'userId';
+            userInput.value = user.userId;
+            form.appendChild(userInput);
 
-                // Center the map on the user's location
-                map.setCenter(userPosition);
-                map.setZoom(18); // Higher zoom for more precision
+            // Add user position inputs
+            const latInput = document.createElement('input');
+            latInput.type = 'hidden';
+            latInput.name = 'enterLatitude';
+            latInput.value = userPosition.lat;
+            form.appendChild(latInput);
 
-                // Add a marker for the user's location
-                userMarker = new google.maps.Marker({
-                    position: userPosition,
-                    map: map,
-                    title: "La tua posizione precisa",
+            const lngInput = document.createElement('input');
+            lngInput.type = 'hidden';
+            lngInput.name = 'enterLongitude';
+            lngInput.value = userPosition.lng;
+            form.appendChild(lngInput);
+
+            const statusInput = document.createElement('input');
+            statusInput.type = 'hidden';
+            statusInput.name = 'status';
+            statusInput.value = "PENDING";
+            form.appendChild(statusInput);
+
+            // Append the form to the body and submit it
+            document.body.appendChild(form);
+            form.submit();
+        };
+        let trips = [];
+
+
+        const updateTripsIfChanged = async (newTrips) => {
+            const existingTrips = JSON.stringify(trips);
+            const incomingTrips = JSON.stringify(newTrips);
+
+            const sidebarContent = document.querySelector(".sidebar-content");
+
+            if (existingTrips !== incomingTrips) {
+                trips = newTrips;
+                sidebarContent.innerHTML = ""; // Clear existing content
+
+                if (trips.length === 0) {
+                    sidebarContent.parentElement.querySelector(".sidebar-header").innerHTML = `<h1 class="mb-3 fade-in">Nessun viaggio trovato</h1>`;
+                    sidebarContent.innerHTML = `<?= view('noResultFound') ?>`;
+                    return;
+                }
+
+                trips.forEach((trip) => {
+                    const tripPath = new google.maps.Polyline({
+                        path: google.maps.geometry.encoding.decodePath(trip.polyline),
+                        geodesic: true,
+                        strokeColor: "#FF0000",
+                        strokeOpacity: 1.0,
+                        strokeWeight: 2,
+                    });
+                    tripPath.setMap(map);
+
+                    // Add markers for trip steps
+                    trip.steps.forEach((step, index) => {
+                        new google.maps.Marker({
+                            position: { lat: +step.latitude, lng: +step.longitude },
+                            map: map,
+                            title: `Step ${index + 1}`,
+                        });
+                    });
+
+                    // Add trip details to the sidebar
+                    const tripCard = document.createElement("div");
+                    tripCard.classList.add("card", "p-3", "mb-3", "fade-in");
+                    tripCard.innerHTML = `
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div class="d-flex align-items-center">
+                                <img src="https://randomuser.me/api/portraits/men/${Math.floor(Math.random() * (50 - 20 + 1)) + 20}.jpg" class="driver-avatar rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">Autista: ${trip.driver.surname} ${trip.driver.name}</h6>
+                                    <small class="text-muted">Distanza: ${trip.distance} km | Tempo: ${trip.time}</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="route-details mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <small class="text-muted me-3">Partenza</small>
+                                <div class="flex-grow-1">
+                                    <span>${trip.steps[0].name}</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <small class="text-muted me-3">Arrivo</small>
+                                <div class="flex-grow-1">
+                                    <span>${trip.steps[trip.steps.length - 1].name}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="badge bg-light text-dark me-2 d-flex" style="gap: 2em">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-user-friends me-1"></i> Posti: ${trip.remainingSlots}
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-car me-1"></i> Auto: ${trip.car.model}
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                       Prezzo:  €${trip.pricePerPassenger}
+                                    </div>
+
+                                </span>
+                            </div>
+                            <button class="btn btn-success onBoard btn-outline-success" style="color: white;">Sali a bordo</button>
+                        </div>
+                    `;
+                    tripCard.querySelector("button.onBoard").addEventListener("click", async function () {
+                        onBoard(trip, <?= json_encode($user) ?>, this);
+                    });
+                    sidebarContent.appendChild(tripCard);
                 });
+            }
+        };
 
-                const currentUser = <?= json_encode($user) ?>;
+        const map = new Map(document.getElementById("map"), {
+            zoom: 12,
+            center: userPosition, // Default center, will be updated to user's location
+        });
 
+        new google.maps.Marker({
+            position: userPosition,
+            map: map,
+            title: "La tua posizione",
+        });
+
+        map.setCenter(userPosition);
+        map.setZoom(12);
+
+        const currentUser = <?= json_encode($user) ?>;
+
+        const response = await fetch("/api/getTripsNearUser", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                lat: userPosition.lat,
+                lng: userPosition.lng,
+                token: currentUser.token,
+            }),
+        });
+
+        if (!response.ok) {
+            console.error("Errore nella richiesta al server.");
+            return;
+        }
+
+        const newTrips = await response.json();
+        updateTripsIfChanged(newTrips);
+
+        setInterval(async () => {
+            try {
                 const response = await fetch("/api/getTripsNearUser", {
-                    method: 'POST',
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
                     body: JSON.stringify({
                         lat: userPosition.lat,
                         lng: userPosition.lng,
@@ -372,122 +408,19 @@
                 });
 
                 if (!response.ok) {
-                    throw new Error('Errore nella richiesta al server.');
+                    console.error("Errore nella richiesta al server.");
+                    return;
                 }
 
-                const trips = await response.json();
-
-                console.log(trips);
-            },
-            (error) => {
-                console.error("Errore nel recupero della posizione:", error);
-            },
-            {
-                enableHighAccuracy: true, // Request more precise location
+                const newTrips = await response.json();
+                updateTripsIfChanged(newTrips);
+            } catch (error) {
+                console.error("Errore durante l'interrogazione al database:", error);
             }
-        );
-
-        initAutocomplete();
-    }
-
-    initMap();
-
-    function toggleSidebar() {
-        const sidebar = document.querySelector('.sidebar');
-        sidebar.classList.toggle('hidden');
-    }
-
-    // async function load() {
-
-    //     if (!departureMarker || !destinationMarker) {
-    //         alert("Per favore, seleziona sia la partenza che la destinazione sulla mappa.");
-    //         return;
-    //     }
-
-    //     const departureCoords = {
-    //         lat: departureMarker.getPosition().lat(),
-    //         lng: departureMarker.getPosition().lng(),
-    //     };
-
-    //     const destinationCoords = {
-    //         lat: destinationMarker.getPosition().lat(),
-    //         lng: destinationMarker.getPosition().lng(),
-    //     };
-
-    //     try {
-    //         const directionsService = new google.maps.DirectionsService();
-
-    //         // Request directions from Google Maps API
-    //         const result = await directionsService.route({
-    //             origin: departureCoords,
-    //             destination: destinationCoords,
-    //             travelMode: google.maps.TravelMode.DRIVING, // You can change this to WALKING, BICYCLING, or TRANSIT
-    //             provideRouteAlternatives: true, // Request multiple route options
-    //         });
-
-    //         console.log("Dettagli delle opzioni di percorso:", result.routes);
-
-    //         // Log the minimal data needed to reconstruct the route
-    //         result.routes.forEach((route, index) => {
-    //             const minimalData = {
-    //                 start_location: {
-    //                     lat: route.legs[0].start_location.lat(),
-    //                     lng: route.legs[0].start_location.lng()
-    //                 }, // Starting point
-    //                 end_location: {
-    //                     lat: route.legs[0].end_location.lat(),
-    //                     lng: route.legs[0].end_location.lng()
-    //                 }, // Ending point
-    //                 polyline: route.overview_polyline, // Compressed polyline
-    //             };
-
-    //             console.log(`Percorso ${index + 1}:`);
-    //             console.log("Dati minimi per ricostruire il percorso:", minimalData);
-    //         });
-    //     } catch (error) {
-    //         console.error("Errore durante la ricerca dei percorsi:", error);
-    //         alert("Si è verificato un errore durante la ricerca dei percorsi. Riprova più tardi.");
-    //     }
-    // }
-
-
-    // document.getElementById('rideRequestForm').addEventListener('submit', async function(event) {
-
-    //     try {
-
-
-    //         // Clear previous results
-    //         const resultsContainer = document.getElementById('resultsContainer');
-    //         resultsContainer.innerHTML = '';
-
-    //         // Add trips to the map and results container
-    //         trips.forEach(trip => {
-    //             // Add markers for each step of the trip
-    //             trip.steps.forEach(step => {
-    //                 const marker = new google.maps.Marker({
-    //                     position: { lat: step.latitude, lng: step.longitude },
-    //                     map: map,
-    //                     title: `Step ${step.ordinal}`,
-    //                 });
-    //             });
-
-    //             // Add trip details to the results container
-    //             const tripElement = document.createElement('div');
-    //             tripElement.classList.add('trip-result');
-    //             tripElement.innerHTML = `
-    //                 <h5>Viaggio ID: ${trip.tripId}</h5>
-    //                 <p><strong>Partenza:</strong> ${trip.startTime}</p>
-    //                 <p><strong>Arrivo stimato:</strong> ${trip.estimatedEndTime}</p>
-    //                 <p><strong>Stato:</strong> ${trip.status}</p>
-    //             `;
-    //             resultsContainer.appendChild(tripElement);
-    //         });
-    //     } catch (error) {
-    //         console.error('Errore durante la ricerca dei viaggi:', error);
-    //         alert('Si è verificato un errore durante la ricerca dei viaggi. Riprova più tardi.');
-    //     }
-    // });
+        }, 2000);
+    })()
 </script>
 <script src="<?= base_url('/Script/observer.js'); ?>"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

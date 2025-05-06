@@ -10,15 +10,15 @@ use DateTime;
 
 class TripService
 {
-    public array $tripAllowedFields = ['tripId', 'carId', 'driverId', 'startTime', 'estimatedEndTime', 'actualEndTime', "status", "active", "slots", "polyline", "time", "distance"];
-    public array $stepAllowedFields = ['stepId', 'tripId', 'latitude', 'longitude', 'ordinal', 'active'];
+    public array $tripAllowedFields = ['tripId', 'carId', 'driverId', 'startTime', 'estimatedEndTime', 'actualEndTime', "status", "active", "slots", "polyline", "time", "distance", "remainingSlots"];
+    public array $stepAllowedFields = ['stepId', 'tripId', 'latitude', 'longitude', 'ordinal', 'name', 'active'];
 
     public function get(array $filters = []): array
     {
         $db = \Config\Database::connect();
 
         // Query to fetch trip details
-        $tripQuery = $db->table('v_trip_remaining_slots t');
+        $tripQuery = $db->table('v_trip_remaining_slots t')->join("v_trip_analytics a", "a.tripId = t.tripId");
 
         $fields = $this->filterTripFields($filters);
 
@@ -33,7 +33,7 @@ class TripService
         }
 
         $stepsQuery = $db->table('t_step')
-        ->select('t_step.stepId, t_step.latitude, t_step.longitude, t_step.polyline, t_step.ordinal')
+        ->select('t_step.stepId, t_step.latitude, t_step.longitude, t_step.ordinal, t_step.name')
         ->where('t_step.tripId', $trip['tripId'])
         ->where('t_step.active', true)
         ->orderBy('t_step.ordinal', 'ASC')
@@ -50,6 +50,27 @@ class TripService
         $trip['steps'] = $steps;
         $trip['driver'] = model(UserService::class)->get(['userId' => $driver->userId, 'active' => true]);
         $trip['car'] = $car;
+
+        return $trip;
+    }
+    public function getAnalytics(array $filters = []): array
+    {
+        $db = \Config\Database::connect();
+
+        // Query to fetch trip details
+        $tripQuery = $db->table('v_trip_analytics t');
+
+        $fields = $this->filterTripFields($filters);
+
+        foreach ($fields as $field => $value) {
+            $tripQuery = $tripQuery->where("t.$field", $value);
+        }
+
+        $trip = $tripQuery->get()->getRowArray();
+
+        if (!$trip) {
+            return []; // Trip not found
+        }
 
         return $trip;
     }
@@ -72,8 +93,8 @@ class TripService
     public function table(): BaseBuilder
     {
         $db = \Config\Database::connect();
-        return $db->table('t_trip t')
-            ->join('t_step', 't_step.tripId = t.tripId');
+        return $db->table('v_trip_remaining_slots t')
+            ->join('t_step s', 's.tripId = t.tripId');
     }
 
     public function insert(array $row): bool
@@ -117,7 +138,7 @@ class TripService
 
         $db->transCommit();
 
-        return $insertTrip && $insertSteps;
+        return $tripId && $insertSteps;
     }
 
     public function update(array $filters, array $row): bool
