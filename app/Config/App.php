@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://localhost:80/';
+    public string $baseURL = 'https://server632.ddns.net/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
@@ -180,7 +180,9 @@ class App extends BaseConfig
      *
      * @var array<string, string>
      */
-    public array $proxyIPs = [];
+    public array $proxyIPs = [
+        "100.101.143.122" => "X-Forwarded-For"
+    ];
 
     /**
      * --------------------------------------------------------------------------
