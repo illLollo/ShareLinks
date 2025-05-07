@@ -72,7 +72,6 @@
     </style>
 </head>
 <body>
-<link rel="stylesheet" href="<?= base_url("/Style/headerStyle.css") ?>">
 
 <div class="fade-in">
     <!-- Hero Section -->

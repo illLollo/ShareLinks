@@ -4,6 +4,7 @@ namespace App\Controllers;
 use App\Models\Services\AccessesService;
 use App\Models\Services\CarService;
 use App\Models\Services\DriverService;
+use App\Models\Services\RequestService;
 use App\Models\Services\TripService;
 
 class Api extends BaseController {
@@ -89,6 +90,34 @@ class Api extends BaseController {
             ->where(['driverId' => $driver->driverId, 'active' => true])->findAll();
 
         return $this->response->setJSON($cars);
+    }
+    public function getRequestsForTrip() {
+        $data = json_decode(file_get_contents('php://input'), true);
+        $token = $data['token'] ?? null;
+        $tripId = $data['tripId'] ?? null;
+
+        $userId = model(AccessesService::class)
+            ->select("t_accesses.userId")
+            ->where(['token' => $token, 'active' => true, "expiryDate >" => date("Y-m-d H:i:s")])
+            ->orderBy("loginDate", "DESC")
+            ->first();
+
+        if (!$userId) {
+            return $this->response->setJSON([
+                'error' => 'Invalid token.'
+            ])->setStatusCode(401);
+        }
+
+        if (!$tripId) {
+            return $this->response->setJSON([
+                'error' => 'Invalid input. Please provide trip ID.'
+            ])->setStatusCode(400);
+        }
+
+        $requests = model(RequestService::class)->select('t_request.*, t_user.*')->join('t_user', 't_request.userId = t_user.userId')
+            ->where(['tripId' => $tripId, 't_request.active' => true, 'status' => 'PENDING'])->findAll();
+
+        return $this->response->setJSON($requests);
     }
 
     private function decodePolyline($polyline)
