@@ -110,7 +110,7 @@
                                     <input type="text" class="form-control" placeholder="Destinazione">
                                 </div>
                                 <div class="col-md-2">
-                                    <button class="btn btn-success w-100">Cerca</button>
+                                    <a href="<?= base_url('/homepage/') ?>" class="btn btn-success w-100">Cerca</a>
                                 </div>
                             </div>
                         </div>

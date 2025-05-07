@@ -72,5 +72,5 @@
   </style>
   <div class="sidebar-container">
   <div class="sidebar" style="<?php if ($direction == 'left') echo 'left: 20px;'; else echo 'right: 20px;'; ?>">
-    <button class="close-btn" onclick="this.closest('.sidebar').classList.add('hidden'); this.parentElement.parentElement.querySelector('.sidebarToggleBtn').style.display = 'flex';">&times;</button>
+    <button class="close-btn" onclick="this.parentElement.classList.add('hidden'); this.parentElement.parentElement.querySelector('.sidebarToggleBtn').style.display = 'flex';">&times;</button>
 

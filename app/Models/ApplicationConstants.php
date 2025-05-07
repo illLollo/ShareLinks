@@ -13,6 +13,8 @@ abstract class ApplicationConstants
     public static string $APPLICATION_INCORRECT_PARAMETERS = "Parametri di registrazione incorretti!";
     public static string $APPLICATION_PASSWORD_MISMATCH = "Le due password devono essere uguali!";
     public static string $USER_ALREADY_EXISTS = "Utente già registrato!";
+    public static string $TRIP_TERMINATED = "Viaggio terminato!";
+    public static string $ALREADY_GOT_OFF = "Sei sceso da quel viaggio!";
     public static string $USER_REGISTERED = "Utente registrato!";
     public static int $TOKEN_EXPIRY_SECONDS = 7200;
     public static string $FORM_UPLOAD_SUCCESSFULLY = "Dati aggiornati con successo!";

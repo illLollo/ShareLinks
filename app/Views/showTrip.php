@@ -168,16 +168,13 @@
             <div class="ride-requests">
                 <h3>Richieste di Passaggio</h3>
                 <div class="ride-requests-content">
+                    <?= view("noResultFound") ?>
 
                 </div>
             </div>
         </div>
-        <div class="sidebar-header">
-        </div>
-        <div class="sidebar-content fade-in">
-            </div>
-        </div>
         <?= view("closeSidebar") ?>
+    </div>
     </div>
     </div>
     </div>
@@ -199,17 +196,20 @@
             <div class="sidebar-header">
                 <h1>Statistiche viaggio</h1>
             </div>
-            <div class="sidebar-content">
+            <form class="sidebar-content" action="/drive/endTrip" method="post">
                 <div class="card analytics-card p-3 mb-3">
                     <p><strong>Distanza:</strong> <?= round($trip->distance, 2) ?> km</p>
                     <p><strong>Costo Totale:</strong> €<?= round($analytics["totalCost"], 2) ?></p>
                     <p><strong>Il tuo profitto:</strong> €<?= round($analytics["driverProfit"], 2) ?></p>
                     <p><strong>CO2 Risparmiata:</strong> <?= round($analytics["co2Saved"], 2) ?> g</p>
-                    <p><strong>Numero Passeggeri:</strong> <?= round($analytics["numPassengers"], 2) ?></p>
+                    <p><strong>Numero Passeggeri totali:</strong> <?= round($analytics["totalPassengers"], 2) ?></p>
+                    <p><strong>Numero Passeggeri a bordo:</strong> <?= round($analytics["passengersOnBoard"], 2) ?></p>
                 </div>
 
+                <input type="hidden" name="tripId" value="<?= $trip->tripId ?>">
+
                 <button class="btn btn-danger btn-outline-danger" style="color: white">Termina Viaggio</button>
-            </div>
+            </form>
         </div>
         <button
             style="position: fixed; top: 40px; right: 20px; width: 48px; height: 48px; border-radius: 50%; background-color: white; color: black; border: none; box-shadow: 0 2px 6px rgba(0,0,0,0.3); font-size: 24px; display: none; justify-content: center; align-items: center; cursor: pointer; z-index: 1001; transition: opacity 0.3s ease;"
@@ -253,7 +253,6 @@
 
         routePath.setMap(map);
 
-
         steps.forEach((step, i) => {
             new google.maps.Marker({
                 position: { lat: +step.latitude, lng: +step.longitude },
@@ -280,12 +279,9 @@
             if (existingRequests !== incomingRequests) {
                 requests = newRequests;
                 const sidebarContent = document.querySelector(".ride-requests-content");
-                sidebarContent.innerHTML = ""; // Clear existing content
+                const noResultElement = document.querySelector(".ride-requests-content .no-result-found");
 
-                if (requests.length === 0) {
-                    sidebarContent.innerHTML = `<p class='text-center'>Nessuna richiesta trovata.</p>`;
-                    return;
-                }
+                sidebarContent.innerHTML = ""; // Clear existing content
 
                 // Clear existing markers for requests
                 if (requestMarkers) {
@@ -293,43 +289,107 @@
                 }
                 requestMarkers = [];
 
-                requests.forEach((request) => {
+                if (requests.length === 0) {
+                    // Show noResultFound if there are no requests
+                    if (!noResultElement) {
+                        const noResultHtml = `<?= view('noResultFound') ?>`;
+                        sidebarContent.innerHTML = noResultHtml;
+                    }
+                } else {
+                    // Hide noResultFound if there are requests
+                    if (noResultElement) {
+                        noResultElement.remove();
+                    }
 
-                    requestMarkers.push(new google.maps.Marker({
-                        position: { lat: +request.enterLatitude, lng: +request.enterLongitude },
-                        map: map,
-                        title: `Richiedente ${request.name}`,
-                        icon: {
-                            path: google.maps.SymbolPath.CIRCLE,
-                            scale: 8,
-                            fillColor: 'blue',
-                            fillOpacity: 1,
-                            strokeWeight: 1,
-                            strokeColor: 'blue'
-                        }
-                    }));
+                    requests.forEach((request) => {
+                        requestMarkers.push(new google.maps.Marker({
+                            position: { lat: +request.enterLatitude, lng: +request.enterLongitude },
+                            map: map,
+                            title: `Richiedente ${request.name}`,
+                            icon: {
+                                path: google.maps.SymbolPath.CIRCLE,
+                                scale: 8,
+                                fillColor: 'blue',
+                                fillOpacity: 1,
+                                strokeWeight: 1,
+                                strokeColor: 'blue'
+                            }
+                        }));
 
-                    const requestCard = document.createElement("div");
-                    requestCard.classList.add("card", "p-3", "mb-3", "fade-in");
-                    requestCard.innerHTML = `
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <div class="d-flex align-items-center">
-                                <img src="https://randomuser.me/api/portraits/men/${Math.floor(Math.random() * (50 - 20 + 1)) + 20}.jpg" class="driver-avatar rounded-circle me-3">
-                                <div>
-                                    <h6 class="mb-0">${request.name} ${request.surname}</h6>
-                                </div>
+                        const requestCard = document.createElement("div");
+                        requestCard.classList.add("card", "p-3", "mb-3", "fade-in");
+                        requestCard.innerHTML = `
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/${Math.floor(Math.random() * (50 - 20 + 1)) + 20}.jpg" class="driver-avatar rounded-circle me-3">
+                            <div>
+                                <h6 class="mb-0">${request.name} ${request.surname}</h6>
                             </div>
                         </div>
-                        <div class="route-details mb-3">
-                            <p><strong>Indirizzo Mail:</strong> ${request.email}</p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <button class="btn btn-success btn-sm">Accetta</button>
-                            <button class="btn btn-danger btn-sm">Rifiuta</button>
-                        </div>
-                    `;
-                    sidebarContent.appendChild(requestCard);
-                });
+                    </div>
+                    <div class="route-details mb-3">
+                        <p><strong>Indirizzo Mail:</strong> ${request.email}</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-success btn-sm accept-btn">Accetta</button>
+                        <button class="btn btn-danger btn-sm reject-btn">Rifiuta</button>
+                    </div>
+                `;
+
+                        // Add event listener for accept button
+                        requestCard.querySelector(".accept-btn").addEventListener("click", async function () {
+                            try {
+                                console.log(currentUser)
+                                const response = await fetch("/api/acceptPassenger", {
+                                    method: "POST",
+                                    headers: {
+                                        "Content-Type": "application/json",
+                                    },
+                                    body: JSON.stringify({
+                                        token: currentUser.token,
+                                        requestId: request.requestId,
+                                        tripId: trip.tripId,
+                                    }),
+                                });
+
+                                if (response.ok) {
+                                    requestCard.remove();
+                                } else {
+                                    console.error("Errore nell'accettare la richiesta.");
+                                }
+                            } catch (error) {
+                                console.error("Errore durante la chiamata al servizio:", error);
+                            }
+                        });
+
+                        // Add event listener for reject button
+                        requestCard.querySelector(".reject-btn").addEventListener("click", async function () {
+                            try {
+                                const response = await fetch("/api/rejectPassenger", {
+                                    method: "POST",
+                                    headers: {
+                                        "Content-Type": "application/json",
+                                    },
+                                    body: JSON.stringify({
+                                        token: currentUser.token,
+                                        requestId: request.requestId,
+                                        tripId: trip.tripId,
+                                    }),
+                                });
+
+                                if (response.ok) {
+                                    requestCard.remove();
+                                } else {
+                                    console.error("Errore nel rifiutare la richiesta.");
+                                }
+                            } catch (error) {
+                                console.error("Errore durante la chiamata al servizio:", error);
+                            }
+                        });
+
+                        sidebarContent.appendChild(requestCard);
+                    });
+                }
             }
         };
 
@@ -356,10 +416,227 @@
                 const newRequests = await response.json();
                 console.log("Nuove richieste:", newRequests);
                 updateRequestsIfChanged(newRequests);
+
+                const passengersResponse = await fetch("/api/getPassengersOnBoardForTrip", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        token: currentUser.token,
+                        tripId: trip.tripId,
+                    }),
+                });
+                if (!passengersResponse.ok) {
+                    console.error("Errore nella richiesta al server.");
+                    return;
+                }
+
+                const passengers = await passengersResponse.json();
+
+                // Fetch updated trip analytics
+                const analyticsResponse = await fetch("/api/getAnalyticsForTrip", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        token: currentUser.token,
+                        tripId: trip.tripId,
+                    }),
+                });
+
+                if (!analyticsResponse.ok) {
+                    console.error("Errore nella richiesta delle statistiche del viaggio.");
+                    return;
+                }
+
+                const updatedAnalytics = await analyticsResponse.json();
+
+                // Update the statistics in the UI
+                const analyticsCard = document.querySelector(".analytics-card");
+                if (analyticsCard) {
+                    analyticsCard.innerHTML = `
+                        <p><strong>Distanza:</strong> ${(+updatedAnalytics.distance).toFixed(2)} km</p>
+                        <p><strong>Costo Totale:</strong> €${(+updatedAnalytics.totalCost).toFixed(2)}</p>
+                        <p><strong>Il tuo profitto:</strong> €${(+updatedAnalytics.driverProfit).toFixed(2)}</p>
+                        <p><strong>CO2 Risparmiata:</strong> ${(+updatedAnalytics.co2Saved).toFixed(2)} g</p>
+                        <p><strong>Numero Passeggeri Totali:</strong> ${(+updatedAnalytics.totalPassengers)}</p>
+                        <p><strong>Numero Passeggeri a bordo:</strong> ${(+updatedAnalytics.passengersOnBoard)}</p>
+                    `;
+                }
             } catch (error) {
                 console.error("Errore durante l'interrogazione al database:", error);
             }
         }, 2000);
+
+        let waitingListMarkers = [];
+
+        const updatePassengerLists = async () => {
+            try {
+                // Fetch passengers on board
+                const onBoardResponse = await fetch("/api/getPassengersOnBoardForTrip", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        token: currentUser.token,
+                        tripId: trip.tripId,
+                    }),
+                });
+
+                if (!onBoardResponse.ok) {
+                    console.error("Errore nella richiesta dei passeggeri a bordo.");
+                    return;
+                }
+
+                const passengersOnBoard = await onBoardResponse.json();
+
+                // Fetch passengers in the waiting list
+                const waitingListResponse = await fetch("/api/getPassengersForTrip", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        token: currentUser.token,
+                        tripId: trip.tripId,
+                    }),
+                });
+
+                if (!waitingListResponse.ok) {
+                    console.error("Errore nella richiesta dei passeggeri in lista d'attesa.");
+                    return;
+                }
+
+                const passengersWaiting = await waitingListResponse.json();
+
+                // Update the UI
+                const sidebarContent = document.querySelector(".ride-requests-content");
+
+                // Create a container for the passenger lists
+                const passengerListsContainer = document.createElement("div");
+                passengerListsContainer.classList.add("passenger-lists");
+
+                // Add passengers on board section
+                let onBoardHtml = "<h4 style='margin-bottom: 10px;'>Passeggeri a bordo</h4>";
+                if (passengersOnBoard.length > 0) {
+                    onBoardHtml += "<div class='card p-3 mb-3'><ul>";
+                    passengersOnBoard.forEach(p => {
+                        onBoardHtml += `<li>${p.name} ${p.surname}</li>`;
+                    });
+                    onBoardHtml += "</ul></div>";
+                } else {
+                    onBoardHtml += `<div class='card p-3 mb-3'><?= view('noResultFound') ?></div>`;
+                }
+
+                // Add passengers waiting section
+                let waitingListHtml = "<h4 style='margin-bottom: 10px;'>Lista d'attesa</h4>";
+                if (passengersWaiting.length > 0) {
+                    waitingListHtml += "<div class='card p-3 mb-3'><ul>";
+                    passengersWaiting.forEach(p => {
+                        waitingListHtml += `<li>${p.name} ${p.surname}</li>`;
+                    });
+                    waitingListHtml += "</ul></div>";
+                } else {
+                    waitingListHtml += `<div class='card p-3 mb-3'><?= view('noResultFound') ?></div>`;
+                }
+
+                // Combine sections
+                passengerListsContainer.innerHTML = onBoardHtml + waitingListHtml;
+
+                // Remove old passenger lists if they exist
+                const oldPassengerLists = sidebarContent.querySelector(".passenger-lists");
+                if (oldPassengerLists) {
+                    oldPassengerLists.remove();
+                }
+
+
+                sidebarContent.appendChild(passengerListsContainer);
+
+                // Update markers for passengers in the waiting list
+                // Clear existing markers
+                waitingListMarkers.forEach(marker => marker.setMap(null));
+                waitingListMarkers = [];
+
+                passengersWaiting.forEach(passenger => {
+                    console.log(passenger)
+                    const marker = new google.maps.Marker({
+                        position: { lat: +passenger.enterLatitude, lng: +passenger.enterLongitude },
+                        map: map,
+                        title: `${passenger.name} ${passenger.surname}`,
+                        icon: {
+                            path: google.maps.SymbolPath.CIRCLE,
+                            scale: 8,
+                            fillColor: 'orange',
+                            fillOpacity: 1,
+                            strokeWeight: 1,
+                            strokeColor: 'orange'
+                        }
+                    });
+                    waitingListMarkers.push(marker);
+                });
+
+                // Remove markers for passengers who are now on board
+                passengersOnBoard.forEach(onBoardPassenger => {
+                    waitingListMarkers = waitingListMarkers.filter(marker => {
+                        if (marker.getTitle() === `${onBoardPassenger.name} ${onBoardPassenger.surname}`) {
+                            marker.setMap(null);
+                            return false;
+                        }
+                        return true;
+                    });
+                });
+
+            } catch (error) {
+                console.error("Errore durante l'aggiornamento delle liste dei passeggeri:", error);
+            }
+        };
+
+        // Call the function periodically to keep the lists and markers updated
+        setInterval(updatePassengerLists, 2000);
+
+        const endTripButton = document.querySelector(".btn-danger");
+
+        // Aggiungi stile per il pulsante disabilitato
+        endTripButton.style.opacity = "0.5";
+        endTripButton.style.cursor = "not-allowed";
+
+        const updateEndTripButtonState = async () => {
+            try {
+                const response = await fetch("/api/getPassengersOnBoardForTrip", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        token: currentUser.token,
+                        tripId: trip.tripId,
+                    }),
+                });
+
+                if (!response.ok) {
+                    console.error("Errore nella richiesta dei passeggeri a bordo.");
+                    return;
+                }
+
+                const passengersOnBoard = await response.json();
+
+                // Abilita o disabilita il pulsante in base al numero di passeggeri a bordo
+                endTripButton.disabled = passengersOnBoard.length !== 0;
+                endTripButton.style.opacity = passengersOnBoard.length === 0 ? "1" : "0.5";
+                endTripButton.style.cursor = passengersOnBoard.length === 0 ? "pointer" : "not-allowed";
+            } catch (error) {
+                console.error("Errore durante l'aggiornamento dello stato del pulsante Termina Viaggio:", error);
+            }
+        };
+
+        // Aggiorna lo stato del pulsante ogni 2 secondi
+        setInterval(updateEndTripButtonState, 2000);
+
+        // Esegui un controllo iniziale
+        updateEndTripButtonState();
     })()
 </script>
 <script src="<?= base_url('/Script/observer.js'); ?>"></script>

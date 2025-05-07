@@ -19,3 +19,35 @@
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?= base_url('/Script/global.js') ?>"></script>
+<script>
+    async function checkRequestStatus() {
+      try {
+        const response = await fetch('<?= base_url('homepage/checkRequestStatus') ?>', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            token: '<?= $user->token ?>',
+            requestId: '<?= $requestId ?>',
+          }),
+        });
+
+        if (!response.ok) {
+          console.error('Errore durante il controllo dello stato della richiesta.');
+          return;
+        }
+
+        const request = await response.json();
+
+        if (request.status === "ACCEPTED") {
+          window.location.href = `/homepage/onBoard/${request.tripId}`
+        }
+      } catch (error) {
+        console.error('Errore durante il controllo dello stato della richiesta:', error);
+      }
+    }
+
+    // Controlla lo stato della richiesta ogni 2 secondi
+    setInterval(checkRequestStatus, 2000);
+  </script>

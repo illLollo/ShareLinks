@@ -12,6 +12,7 @@ class TripService
 {
     public array $tripAllowedFields = ['tripId', 'carId', 'driverId', 'startTime', 'estimatedEndTime', 'actualEndTime', "status", "active", "slots", "polyline", "time", "distance", "remainingSlots"];
     public array $stepAllowedFields = ['stepId', 'tripId', 'latitude', 'longitude', 'ordinal', 'name', 'active'];
+    public array $tripUserAllowedFields = ['tripId', 'userId', 'active', 'enterLatitude', 'enterLongitude', 'exitLatitude', "exitLongitude", 'polyline', "userStatus"];
 
     public function get(array $filters = []): array
     {
@@ -53,6 +54,31 @@ class TripService
 
         return $trip;
     }
+    public function tableTripUser() {
+        $db = \Config\Database::connect();
+        return $db->table("t_trip_user");
+    }
+    public function changePassengerState(int $tripId, int $userId, string $newStatus) {
+        $db = \Config\Database::connect();
+        return $db->table("t_trip_user")->update(["userStatus" => $newStatus], ["tripId" => $tripId, "userId" => $userId]);
+    }
+    public function registerPassenger(int $tripId, array $row): bool
+    {
+        $db = \Config\Database::connect();
+
+        $tripData = $this->filterTripUserFields($row);
+
+        $result = $db->table('t_trip_user')->insert([
+            "tripId" => $tripId,
+            "userId" => $tripData["userId"],
+            "active" => $tripData["active"],
+            "enterLatitude" => $tripData["enterLatitude"],
+            "enterLongitude" => $tripData["enterLongitude"],
+            "userStatus" => "WAITING"
+        ]);
+
+        return $result;
+    }
     public function getAnalytics(array $filters = []): array
     {
         $db = \Config\Database::connect();
@@ -71,6 +97,27 @@ class TripService
         if (!$trip) {
             return []; // Trip not found
         }
+
+        return $trip;
+    }
+    public function getPassengersForTrip(array $filters = []): array
+    {
+        $db = \Config\Database::connect();
+
+        // Query to fetch trip details
+        $tripQuery = $db->table('v_trip_remaining_slots t')->join("t_trip_user tu", "tu.tripId = t.tripId")->join("t_user u", "u.userId = tu.userId");
+
+        $fields = $this->filterTripFields($filters);
+        $userFields = $this->filterTripUserFields($filters);
+
+        foreach ($fields as $field => $value) {
+            $tripQuery = $tripQuery->where("t.$field", $value);
+        }
+        foreach ($userFields as $field => $value) {
+            $tripQuery = $tripQuery->where("tu.$field", $value);
+        }
+
+        $trip = $tripQuery->get()->getResultArray();
 
         return $trip;
     }
@@ -140,6 +187,29 @@ class TripService
 
         return $tripId && $insertSteps;
     }
+    public function updateUserInTrip(array $filters, array $row) {
+        $db = \Config\Database::connect();
+
+        $db->transBegin();
+
+        $tripData = $this->filterTripUserFields($row);
+        $tripTable = $db->table('t_trip_user tu');
+
+        foreach ($filters as $field => $value) {
+            $tripTable->where("tu.$field", $value);
+        }
+
+        $updateTrip = $tripTable->update($tripData);
+
+        if (!$updateTrip) {
+            $db->transRollback();
+        }
+        else {
+            $db->transCommit();
+        }
+
+        return $updateTrip;
+    }
 
     public function update(array $filters, array $row): bool
     {
@@ -187,6 +257,12 @@ class TripService
     {
         return array_filter($input, function($key) {
             return in_array($key, $this->stepAllowedFields);
+        }, ARRAY_FILTER_USE_KEY);
+    }
+    private function filterTripUserFields(array $input): array
+    {
+        return array_filter($input, function($key) {
+            return in_array($key, $this->tripUserAllowedFields);
         }, ARRAY_FILTER_USE_KEY);
     }
 }

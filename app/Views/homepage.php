@@ -175,6 +175,7 @@
             <h1 class="mb-3 fade-in">Viaggi disponibili</h1>
         </div>
         <div class="sidebar-content fade-in">
+            <?= view("noResultFound") ?>
         </div>
         <?= view("closeSidebar") ?>
     </div>
@@ -267,7 +268,8 @@
             form.submit();
         };
         let trips = [];
-
+        let tripMarkers = {}; // Store markers for each trip
+        let tripPaths = {};   // Store paths for each trip
 
         const updateTripsIfChanged = async (newTrips) => {
             const existingTrips = JSON.stringify(trips);
@@ -276,6 +278,22 @@
             const sidebarContent = document.querySelector(".sidebar-content");
 
             if (existingTrips !== incomingTrips) {
+                // Remove markers and paths for trips that no longer exist
+                trips.forEach((trip) => {
+                    if (!newTrips.some(newTrip => newTrip.tripId === trip.tripId)) {
+                        // Remove markers
+                        if (tripMarkers[trip.tripId]) {
+                            tripMarkers[trip.tripId].forEach(marker => marker.setMap(null));
+                            delete tripMarkers[trip.tripId];
+                        }
+                        // Remove paths
+                        if (tripPaths[trip.tripId]) {
+                            tripPaths[trip.tripId].setMap(null);
+                            delete tripPaths[trip.tripId];
+                        }
+                    }
+                });
+
                 trips = newTrips;
                 sidebarContent.innerHTML = ""; // Clear existing content
 
@@ -286,6 +304,7 @@
                 }
 
                 trips.forEach((trip) => {
+                    // Add trip path to the map
                     const tripPath = new google.maps.Polyline({
                         path: google.maps.geometry.encoding.decodePath(trip.polyline),
                         geodesic: true,
@@ -294,10 +313,11 @@
                         strokeWeight: 2,
                     });
                     tripPath.setMap(map);
+                    tripPaths[trip.tripId] = tripPath;
 
                     // Add markers for trip steps
-                    trip.steps.forEach((step, index) => {
-                        new google.maps.Marker({
+                    tripMarkers[trip.tripId] = trip.steps.map((step, index) => {
+                        return new google.maps.Marker({
                             position: { lat: +step.latitude, lng: +step.longitude },
                             map: map,
                             title: `Step ${index + 1}`,
@@ -305,50 +325,50 @@
                     });
 
                     // Add trip details to the sidebar
+                    sidebarContent.parentElement.querySelector(".sidebar-header").innerHTML = `<h1 class="mb-3 fade-in">Viaggi Disponibili</h1>`;
                     const tripCard = document.createElement("div");
                     tripCard.classList.add("card", "p-3", "mb-3", "fade-in");
                     tripCard.innerHTML = `
-                        <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="d-flex align-items-center">
+            <img src="https://randomuser.me/api/portraits/men/${Math.floor(Math.random() * (50 - 20 + 1)) + 20}.jpg" class="driver-avatar rounded-circle me-3">
+            <div>
+            <h6 class="mb-0">Autista: ${trip.driver.surname} ${trip.driver.name}</h6>
+            <small class="text-muted">Distanza: ${trip.distance} km | Tempo: ${trip.time}</small>
+            </div>
+            </div>
+                </div>
+                <div class="route-details mb-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <small class="text-muted me-3">Partenza</small>
+                        <div class="flex-grow-1">
+                            <span>${trip.steps[0].name}</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <small class="text-muted me-3">Arrivo</small>
+                        <div class="flex-grow-1">
+                            <span>${trip.steps[trip.steps.length - 1].name}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="badge bg-light text-dark me-2 d-flex" style="gap: 2em">
                             <div class="d-flex align-items-center">
-                                <img src="https://randomuser.me/api/portraits/men/${Math.floor(Math.random() * (50 - 20 + 1)) + 20}.jpg" class="driver-avatar rounded-circle me-3">
-                                <div>
-                                    <h6 class="mb-0">Autista: ${trip.driver.surname} ${trip.driver.name}</h6>
-                                    <small class="text-muted">Distanza: ${trip.distance} km | Tempo: ${trip.time}</small>
-                                </div>
+                                <i class="fas fa-user-friends me-1"></i> Posti: ${trip.remainingSlots}
                             </div>
-                        </div>
-                        <div class="route-details mb-3">
-                            <div class="d-flex align-items-center mb-2">
-                                <small class="text-muted me-3">Partenza</small>
-                                <div class="flex-grow-1">
-                                    <span>${trip.steps[0].name}</span>
-                                </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-car me-1"></i> Auto: ${trip.car.model}
                             </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <small class="text-muted me-3">Arrivo</small>
-                                <div class="flex-grow-1">
-                                    <span>${trip.steps[trip.steps.length - 1].name}</span>
-                                </div>
+                            <div class="d-flex align-items-center">
+                               Prezzo:  €${trip.pricePerPassenger}
                             </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div>
-                                <span class="badge bg-light text-dark me-2 d-flex" style="gap: 2em">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fas fa-user-friends me-1"></i> Posti: ${trip.remainingSlots}
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <i class="fas fa-car me-1"></i> Auto: ${trip.car.model}
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                       Prezzo:  €${trip.pricePerPassenger}
-                                    </div>
-
-                                </span>
-                            </div>
-                            <button class="btn btn-success onBoard btn-outline-success" style="color: white;">Sali a bordo</button>
-                        </div>
-                    `;
+                        </span>
+                    </div>
+                    <button class="btn btn-success onBoard btn-outline-success" style="color: white;">Sali a bordo</button>
+                </div>
+            `;
                     tripCard.querySelector("button.onBoard").addEventListener("click", async function () {
                         onBoard(trip, <?= json_encode($user) ?>, this);
                     });
