@@ -58,9 +58,9 @@ class TripService
         $db = \Config\Database::connect();
         return $db->table("t_trip_user");
     }
-    public function changePassengerState(int $tripId, int $userId, string $newStatus) {
+    public function changePassengerState(int $tripId, int|string $userId, string $newStatus) {
         $db = \Config\Database::connect();
-        return $db->table("t_trip_user")->update(["userStatus" => $newStatus], ["tripId" => $tripId, "userId" => $userId]);
+        return $db->table("t_trip_user")->set(["userStatus" => $newStatus])->where( ["tripId" => $tripId, "userId" => $userId])->update();
     }
     public function registerPassenger(int $tripId, array $row): bool
     {

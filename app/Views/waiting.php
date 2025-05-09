@@ -22,14 +22,14 @@
 <script>
     async function checkRequestStatus() {
       try {
-        const response = await fetch('<?= base_url('homepage/checkRequestStatus') ?>', {
+        const response = await fetch('<?= base_url('api/getRequest') ?>', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
             token: '<?= $user->token ?>',
-            requestId: '<?= $requestId ?>',
+            requestId: '<?= $request["requestId"] ?>',
           }),
         });
 
@@ -41,7 +41,9 @@
         const request = await response.json();
 
         if (request.status === "ACCEPTED") {
-          window.location.href = `/homepage/onBoard/${request.tripId}`
+          window.location.href = `/homepage/onBoard/${request.tripId}`;
+        } else if (request.status === "REJECTED" || request.status === "CANCELLED") {
+          window.location.href = '/homepage'; // Reindirizza alla lista viaggi disponibili
         }
       } catch (error) {
         console.error('Errore durante il controllo dello stato della richiesta:', error);

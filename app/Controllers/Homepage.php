@@ -18,14 +18,13 @@ class Homepage extends BaseController
         $request = model(RequestService::class)->select("t_request.*")->where([
             'userId' => $user->userId,
             'active' => true,
-        ])->first();
-
+        ])->orderBy("date", "DESC")->first();
 
         if ($request) {
             $trip = model(TripService::class)->get(["tripId" => $request["tripId"], 'STATUS' => ApplicationConstants::$TRIP_STATUS["ENDED"]]);
-            $tripUserInfo = model(TripService::class)->getPassengersForTrip(["tripId" => $trip["tripId"], "userId" => $user->userId, "active" => true])[0];
+            $tripUserInfoArr = model(TripService::class)->getPassengersForTrip(["tripId" => $trip["tripId"], "userId" => $user->userId, "active" => true]);
 
-            if ($request["status"] === "ACCEPTED" && $trip && $tripUserInfo["userStatus"] != "GOT OFF") {
+            if ($request["status"] === "ACCEPTED" && count($tripUserInfoArr) > 0 && $trip && $tripUserInfoArr[0]["userStatus"] != "GOT OFF") {
                 return redirect()->to("/homepage/onBoard/" . $request["tripId"]);
             }
             if ($request["status"] === "PENDING") {
@@ -46,6 +45,19 @@ class Homepage extends BaseController
         return view("homepage", ['user' => $user, 'driver' => $driver]);
     }
     public function registerOnBoard() {
+
+        $user = AuthHelper::getAuthenticatedUser();
+
+        $count = model(RequestService::class)->where([
+            "userId" => $user->userId,
+            'tripId' => $_POST["tripId"],
+            'active' => true,
+        ])->countAllResults();
+
+        if ($count > 0) {
+            session()->setFlashdata("toastMessage", ApplicationConstants::$ALREADY_REGISTERED);
+            return redirect()->to("/homepage/");
+        }
         $result = model(RequestService::class)->insert($_POST);
 
         if ($result) {
@@ -62,19 +74,24 @@ class Homepage extends BaseController
         $trip = model(TripService::class)->get(["tripId" => $tripId, "status" => "STARTED"]);
 
         if (!$trip) {
-            redirect()->to("/homepage/");
+            return redirect()->to("/homepage/");
         }
 
-        $tripUserInfo = model(TripService::class)->getPassengersForTrip(["userId" => $user->userId])[0];
+        $tripUserInfo = model(TripService::class)->getPassengersForTrip(["userId" => $user->userId]);
+
+        if (!$tripUserInfo) {
+            session()->setFlashdata("toastMessage", ApplicationConstants::$CANNOT_VIEW_PAGE);
+            return redirect()->to("/homepage/");
+        }
 
 
-        if ($tripUserInfo["userStatus"] == "GOT OFF") {
+        if ($tripUserInfo[0]["userStatus"] == "GOT OFF") {
             session()->setFlashdata("toastMessage", ApplicationConstants::$ALREADY_GOT_OFF);
             return redirect()->to("/homepage/");
         }
 
         echo view("header", ['user' => $user, 'driver' => $driver]);
-        return view("userTripView", ['user' => $user, 'driver' => $driver, "trip" => $trip, "tripUserInfo" => $tripUserInfo]);
+        return view("userTripView", ['user' => $user, 'driver' => $driver, "trip" => $trip, "tripUserInfo" => $tripUserInfo[0]]);
     }
     public function cancelRequest() {
         $user = AuthHelper::getAuthenticatedUser();

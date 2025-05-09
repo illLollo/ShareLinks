@@ -8,6 +8,7 @@ abstract class ApplicationConstants
         "ENDED" => "ENDED"
     ];
     public static string $APPLICATION_DATA_ERROR = "Errore nella ricezione dei dati. Riprovare più tardi!";
+    public static string $ALREADY_REGISTERED = "Non puoi registrarti due volte allo stesso viaggio!";
     public static string $TRIP_ALREADY_STARTED = "Sei già in viaggio!";
     public static string $APPLICATION_DATABASE_FAILED = "Errore nell'inserimento dei dati!";
     public static string $APPLICATION_INCORRECT_PARAMETERS = "Parametri di registrazione incorretti!";

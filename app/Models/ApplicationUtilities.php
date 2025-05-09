@@ -8,6 +8,7 @@ use App\Models\Services\UserService;
 use CodeIgniter\Database\Exceptions\DatabaseException;
 use CodeIgniter\Exceptions\PageNotFoundException;
 use CodeIgniter\HTTP\RedirectResponse;
+use DateTime;
 
 class ApplicationUtilities
 {
@@ -26,7 +27,7 @@ class ApplicationUtilities
             $access = model(AccessesService::class)->select("t_accesses.*")->where([
                 'userId' => $session->get("userId"),
                 'active' => true,
-                'expiryDate >' => date("Y-m-d H:i:s")
+                'expiryDate >' => (new DateTime())->format('Y-m-d H:i:s')
             ])->orderBy("loginDate", "DESC")->first();
 
             if ($access) {

@@ -209,9 +209,8 @@
                             token: '<?= $user->token ?>',
                         }),
                     });
-
                     if (response.ok) {
-                        location.reload()
+                        // location.reload()
                     } else {
                     }
                 } catch (error) {

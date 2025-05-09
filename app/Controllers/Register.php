@@ -15,6 +15,7 @@ class Register extends BaseController
             return redirect()->to('/homepage/'); // Redirect if already logged in
         }
 
+        echo view("basicNav");
         return view('register', ['toastMessage' => session()->getFlashdata('toastMessage')]);
     }
 

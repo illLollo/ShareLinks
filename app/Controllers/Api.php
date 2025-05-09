@@ -58,11 +58,13 @@ class Api extends BaseController {
 
             if ($distToUser <= 1000) { // 1 km
                 $trip = $tripService->get(['tripId' => $pair['tripId'], 'active' => true, 'status' => 'STARTED', 'remainingSlots >' => 0]);
-                $tripMatches[] = $trip;
+                if ($trip) {
+                    $tripMatches[] = $trip;
+                }
             }
         }
 
-        return $this->response->setJSON($tripMatches);
+        return $this->response->setJSON($tripMatches)->setStatusCode(200);
     }
     public function getCars() {
         $data = json_decode(file_get_contents('php://input'), true);
@@ -218,8 +220,7 @@ class Api extends BaseController {
             return $this->response->setJSON(["error" => "Invalid token"])->setStatusCode(400);
         }
 
-
-        $response = model(TripService::class)->changePassengerState($tripId, (int) $userId, "ON BOARD");
+        $response = model(TripService::class)->changePassengerState($tripId, (int) $userId["userId"], "ON BOARD");
 
         if ($response) {
             return $this->response->setJSON(true)->setStatusCode(200);
@@ -263,6 +264,7 @@ class Api extends BaseController {
         $latitude = $data['latitude'] ?? null;
         $longitude = $data['longitude'] ?? null;
         $polyline = $data['polyline'] ?? null;
+        $uid = $data['userId'] ?? null;
 
         $userId = model(AccessesService::class)
             ->select("t_accesses.userId")
@@ -278,10 +280,10 @@ class Api extends BaseController {
 
         $db->transStart();
 
-        $response = model(TripService::class)->changePassengerState($tripId, (int) $userId, "GOT OFF");
+        $response = model(TripService::class)->changePassengerState($tripId, $uid, "GOT OFF");
         $setOff = model(TripService::class)->updateUserInTrip(["userId" => $userId, "tripId" => $tripId], ["exitLatitude" => $latitude,"exitLongitude" => $longitude, "polyline" => $polyline]);
 
-        if ($response) {
+        if ($response && $setOff) {
             $db->transCommit();
             return $this->response->setJSON(true)->setStatusCode(200);
         } else {
@@ -337,10 +339,11 @@ class Api extends BaseController {
             ])->setStatusCode(401);
         }
 
-        $request = model(RequestService::class)->select("t_request.*")->first();
+        $request = model(RequestService::class)->select("t_request.*")->where(["requestId" => $requestId])->first();
+
 
         if ($request) {
-            return $this->response->setJSON(true)->setStatusCode(200);
+            return $this->response->setJSON($request)->setStatusCode(200);
         }
 
         return $this->response->setJSON([

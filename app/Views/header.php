@@ -99,7 +99,6 @@
                         <li><a class="dropdown-item" href="<?= base_url('/driver/registerDriverLicense') ?>">Crea il tuo profilo da
                                 guidatore</a></li>
                     <?php endif; ?>
-                    <li><a class="dropdown-item" href="<?= base_url('/settings') ?>">Impostazioni</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>

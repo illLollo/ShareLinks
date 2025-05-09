@@ -275,6 +275,15 @@
             const existingTrips = JSON.stringify(trips);
             const incomingTrips = JSON.stringify(newTrips);
 
+            console.log(newTrips)
+
+            if (newTrips.length === 0) {
+                sidebarContent.parentElement.querySelector(".sidebar-header").innerHTML = `<h1 class="mb-3 fade-in">Nessun viaggio trovato</h1>`;
+                sidebarContent.innerHTML = `<?= view('noResultFound') ?>`;
+
+                // Fix: do not try to draw polylines or markers if no trips
+                return;
+            }
             const sidebarContent = document.querySelector(".sidebar-content");
 
             if (existingTrips !== incomingTrips) {
@@ -297,13 +306,11 @@
                 trips = newTrips;
                 sidebarContent.innerHTML = ""; // Clear existing content
 
-                if (trips.length === 0) {
-                    sidebarContent.parentElement.querySelector(".sidebar-header").innerHTML = `<h1 class="mb-3 fade-in">Nessun viaggio trovato</h1>`;
-                    sidebarContent.innerHTML = `<?= view('noResultFound') ?>`;
-                    return;
-                }
 
                 trips.forEach((trip) => {
+                    if (trip.length === 0) {
+                        return;
+                    }
                     // Add trip path to the map
                     const tripPath = new google.maps.Polyline({
                         path: google.maps.geometry.encoding.decodePath(trip.polyline),
